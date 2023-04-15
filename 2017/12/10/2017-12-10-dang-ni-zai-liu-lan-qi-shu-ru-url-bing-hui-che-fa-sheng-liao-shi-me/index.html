@@ -1,0 +1,1328 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="当你在浏览器输入URL并回车发生了什么, 一点雨见">
+    <meta name="description" content="Electronic Notes of my personal insight">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126136790-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-126136790-1');
+</script>
+
+
+    <title>当你在浏览器输入URL并回车发生了什么 | 一点雨见</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="一点雨见" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">一点雨见</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">一点雨见</div>
+        <div class="logo-desc">
+            
+            Electronic Notes of my personal insight
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/input-url.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">当你在浏览器输入URL并回车发生了什么</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/os/">
+                                <span class="chip bg-color">os</span>
+                            </a>
+                        
+                            <a href="/tags/browser/">
+                                <span class="chip bg-color">browser</span>
+                            </a>
+                        
+                            <a href="/tags/dns/">
+                                <span class="chip bg-color">dns</span>
+                            </a>
+                        
+                            <a href="/tags/arp/">
+                                <span class="chip bg-color">arp</span>
+                            </a>
+                        
+                            <a href="/tags/tcp/">
+                                <span class="chip bg-color">tcp</span>
+                            </a>
+                        
+                            <a href="/tags/http/">
+                                <span class="chip bg-color">http</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/computer-fundation/" class="post-category">
+                                computer fundation
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2017-12-10
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-15
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    16 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>‘当你在浏览器中输入Google.com并按下回车后，发生了什么？’。<br>这是一个使用浏览器进行资源访问的常见场景。<br>作为一个如今高频发生的事情，它看起来是非常简单的。<br>浏览器发送请求，通过网络传输，服务器收到请求并返回处理后的信息。<br>似乎一句话便能说清楚的问题，却是一个被人讨论无数次，并认为是一个难以回答清楚的问题。<br>Why？这个看似简单的明了的问题，其实涉及了底层硬件，操作系统，计算机网络…等等多个领域。<br>想要细致地回答这个问题，并没有想象中那样简单。<br>操作系统如何知道你输入的是”G”而不是”B”？<br>信息是如何被操作系统发出？又如何在茫茫的网络空间中精准地找到目标？…<br>每个问题几乎都是一个领域的缩影。<br>那当我们躺在屋里享受着Google带来的便捷之时，背后究竟发生了什么呢？</p>
+<h2 id="输入URL"><a href="#输入URL" class="headerlink" title="输入URL"></a>输入URL</h2><h3 id="键盘输入URL"><a href="#键盘输入URL" class="headerlink" title="键盘输入URL"></a>键盘输入URL</h3><p>首先第一步，输入URL。从按下键盘到浏览器接收到输入，这个过程涉及了物理键盘、系统中断、汇编方面的内容。<br>当你按下键盘，一个用于该键的电流回路被直接或者通过电容器间接的闭合，因此电流进入键盘的逻辑电路系统。<br>这个逻辑电路系统检测到该按键的状态变化，将电流信号转换为键盘码值（通过汇编程序）。<br>键盘控制器得到码值后，将其编码，用于之后的传输。如今这个传输介质通常为串行总线（USB）或蓝牙，以前主要通过PS/2或者ADB。</p>
+<p>键盘将输入的编码（一个整形数）通过IRQ（Interrupt Request，中断请求）发送，由OS的内核提供的中断处理器进行处理。<br>最终操作系统可以得到输入的具体内容。</p>
+<h2 id="解析URL"><a href="#解析URL" class="headerlink" title="解析URL"></a>解析URL</h2><h3 id="按下回车"><a href="#按下回车" class="headerlink" title="按下回车"></a>按下回车</h3><p>当你按下回车，按照上文阐述的过程，回车信号被操作系统捕获，解析URL的过程被触发。</p>
+<h3 id="判断是URL还是搜索关键字"><a href="#判断是URL还是搜索关键字" class="headerlink" title="判断是URL还是搜索关键字"></a>判断是URL还是搜索关键字</h3><p>浏览器首先会检测输入的URL的合法性。通过检测协议和主机名来进行合法性检测。<br>如果不是一个合法的URL，浏览器则会将输入视为一个搜索关键字。</p>
+<h3 id="检查HSTS列表"><a href="#检查HSTS列表" class="headerlink" title="检查HSTS列表"></a>检查HSTS列表</h3><p>HSTS（HTTP Strict Transfer Security，HTTP严格传输安全）是浏览器存储的一个列表，列表中包含了只能使用HTTPS来进行访问的网站。<br>之所以使用HSTS，主要是为了避免用户受到降级攻击。因为用户可能会发送HTTP请求，被服务器拒绝后，才会重新发送HTTPS请求。<br>而第一次的HTTP请求并不安全。浏览器内置的HSTS就可以一定程度的解决这个问题。</p>
+<h3 id="转换非ASCII的Unicode字符"><a href="#转换非ASCII的Unicode字符" class="headerlink" title="转换非ASCII的Unicode字符"></a>转换非ASCII的Unicode字符</h3><p>浏览器会检查传输的数据是否包含有<code>a-z</code>，<code>A-Z</code>，<code>0-9</code>，<code>-</code>，<code>.</code>以外的字符。<br>如果存在不合规的字符，则对其进行编码，可以通过不同的编码规则进行编码（UTF8，GBK等）。</p>
+<h2 id="访问URL"><a href="#访问URL" class="headerlink" title="访问URL"></a>访问URL</h2><h3 id="DNS解析"><a href="#DNS解析" class="headerlink" title="DNS解析"></a>DNS解析</h3><p>DNS查询的步骤如下：</p>
+<ol>
+<li><p>检查浏览器缓存</p>
+<p> 浏览器会维护一个常用的DNS解析列表，表中记录了常用的域名及其对应的IP</p>
+</li>
+<li><p>检查操作系统缓存</p>
+<p> 调用gethostbynme库函数（操作系统不同函数也不同）进行查询，查询域名是否在本地Hosts中</p>
+</li>
+<li><p>检查路由器缓存</p>
+<p> 路由器也维护了一个域名解析列表，在之前均检查失败的情况下会检查路由器缓存。</p>
+</li>
+<li><p>检查ISP缓存</p>
+<p> 如果在本地解析均失败，则发送请求到ISP的DNS服务器上进行解析。<br> ISP的DNS解析过程是一个递归的解析过程，从根域名开始解析。<br> 比如需要解析<code>www.wikipedia.org</code>, 会经历以下几步：</p>
+<ol>
+<li><p>通过保存在本地的IP，访问根域名系统（包含org的域名系统，即顶级域名系统），获取到下一步需要访问的域名系统的IP；</p>
+</li>
+<li><p>通过上一步获取到的IP，访问org的域名系统（包含wikipedia的域名系统），获取到再下一步的域名系统的IP；</p>
+</li>
+<li><p>通过上一步获取到的IP，访问wikipedia.org的域名系统，获取到最终的访问目标IP。</p>
+<p>步骤示意图如下所示：</p>
+<p><img src="https://en.wikipedia.org/wiki/File:Example_of_an_iterative_DNS_resolver.svg" alt="Address Resolution"></p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="ARP"><a href="#ARP" class="headerlink" title="ARP"></a>ARP</h3><p>上一步讲了DNS解析的大致过程，但有一个问题。我们如何能够通过一个目标IP就能访问到路由器以及ISP的域名服务器呢？<br>其实是使用了ARP请求。</p>
+<p>ARP（Address Resolution Protocol，地址解析协议），意在通过IP地址解析得到链路层地址，比如MAC地址。<br>主要用于数据链路层的通信（OSI七层模型，在TCP/IP模型中属于网络层）。<br>当我们需要访问DNS服务器时，ARP请求的步骤大致如下：</p>
+<ol>
+<li>通过IP查找本地缓存的ARP列表，找到则返回MAC地址；</li>
+<li>如果本地缓存未命中，则查看网络存储设备（路由器）中的路由表，发现目标IP在本地路由表中的某个子网中，则向该子网广播ARP请求；</li>
+<li>如果路由表未命中，则向默认网关发送ARP请求；</li>
+<li>如果默认网关未命中，则再向默认网关所在的网络进行广播ARP请求，直到命中或失败。</li>
+</ol>
+<h3 id="使用Socket通信"><a href="#使用Socket通信" class="headerlink" title="使用Socket通信"></a>使用Socket通信</h3><p>找到目标IP的确切位置后，调用系统库函数sockt，请求一个TCP套接字。<br>这个请求会被逐层封装，大致经过以下几步：</p>
+<ol>
+<li><p>传输层处理</p>
+<p> 传输层将TCP请求封装成TCP报文。各种信息被写入TCP报文的头部。</p>
+</li>
+<li><p>网络层处理</p>
+<p> 网络层主要将上一层生成的TCP报文进行处理，加入一个IP头部。封装成IP报文。主要包括目标IP以及源IP地址。</p>
+</li>
+<li><p>链路层处理</p>
+<p> 链路层在IP报文外封装一个frame头部，包括了本地网卡的MAC地址以及网关的MAC地址等信息。如上文述，发送TCP报文需要MAC地址。</p>
+</li>
+<li><p>物理层传输</p>
+<p> 物理层主要根据传输介质的不同，将报文转换为各种适于传输的格式。<br> 常见的传输介质有以下几种：</p>
+<ol>
+<li><p>以太网</p>
+</li>
+<li><p>WiFi</p>
+</li>
+<li><p>蜂窝数据网络</p>
+<p>使用电话线路、有线电视光缆和无限电话线路来进行传输时，需要使用调制解调器将报文的数字信号转换成模拟信号，接收端再使用另一个调制解调器进行逆向转换。</p>
+<p>如果使用光纤进行传输，则无需进行调制解调。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="三次握手"><a href="#三次握手" class="headerlink" title="三次握手"></a>三次握手</h3><p>上文介绍TCP/IP通信时每个数据包传输的具体过程。这部分介绍TCP/IP进行通信的过程，即三次握手。</p>
+<p>所谓三次握手（Three-Way Handshake）即建立TCP连接，就是指建立一个TCP连接时，需要客户端和服务端总共发送3个包以确认连接的建立。<br>在socket编程中，这一过程由客户端执行connect来触发。</p>
+<p>三次握手示意图：</p>
+<p><img src="https://i.loli.net/2018/02/10/5a7e5f79d52be.png" alt="三次握手示意图"></p>
+<p>三次握手解释如下：</p>
+<ol>
+<li><p>第一次握手</p>
+<p> Client将标志位SYN置为1，随机产生一个值seq=J（seq是TCP首部的序号），并将该数据包发送给Server，Client进入SYN_SENT状态，等待Server确认。</p>
+</li>
+<li><p>第二次握手</p>
+<p>Server收到数据包后由标志位SYN=1知道Client请求建立连接，Server将标志位SYN和ACK都置为1，ack=J+1（ack是TCP首部的确认号），<br>随机产生一个值seq=K，并将该数据包发送给Client以确认连接请求，Server进入SYN_RCVD状态。</p>
+</li>
+<li><p>第三次握手</p>
+<p>Client收到确认后，检查ack是否为J+1，ACK是否为1，如果正确则将标志位ACK置为1，ack=K+1，并将该数据包发送给Server，<br>Server检查ack是否为K+1，ACK是否为1，如果正确则连接建立成功，Client和Server进入ESTABLISHED状态，完成三次握手，<br>随后Client与Server之间可以开始传输数据了。</p>
+</li>
+</ol>
+<h3 id="四次挥手"><a href="#四次挥手" class="headerlink" title="四次挥手"></a>四次挥手</h3><p>在断开TCP连接时，会进行四次挥手。<br>所谓四次挥手（Four-Way Wavehand）即终止TCP连接，就是指断开一个TCP连接时，需要客户端和服务端总共发送4个包以确认连接的断开。<br>在Socket编程中，这一过程由客户端或服务端任一方执行close来触发。</p>
+<p>四次挥手示意图：</p>
+<p><img src="https://i.loli.net/2018/02/10/5a7ecf3e29445.png" alt="四次挥手"></p>
+<p>由于TCP连接是全双工的，因此，每个方向都必须要单独进行关闭。<br>这一原则是当一方完成数据发送任务后，发送一个FIN来终止这一方向的连接，收到一个FIN只是意味着这一方向上没有数据流动了，<br>即不会再收到数据了，但是在这个TCP连接上仍然能够发送数据，直到这一方向也发送了FIN。<br>首先进行关闭的一方将执行主动关闭，而另一方则执行被动关闭，上图描述的即是如此。</p>
+<p>四次挥手解释如下：</p>
+<ol>
+<li><p>第一次挥手</p>
+<p>Client发送一个FIN，用来关闭Client到Server的数据传送，Client进入FIN_WAIT_1状态。</p>
+</li>
+<li><p>第二次挥手</p>
+<p>Server收到FIN后，发送一个ACK给Client，确认序号为收到序号+1（与SYN相同，一个FIN占用一个序号），Server进入CLOSE_WAIT状态。</p>
+</li>
+<li><p>第三次挥手</p>
+<p>Server发送一个FIN，用来关闭Server到Client的数据传送，Server进入LAST_ACK状态。</p>
+</li>
+<li><p>第四次挥手</p>
+<p>Client收到FIN后，Client进入TIME_WAIT状态，接着发送一个ACK给Server，确认序号为收到序号+1，Server进入CLOSED状态，完成四次挥手。</p>
+</li>
+</ol>
+<h5 id="长连接"><a href="#长连接" class="headerlink" title="长连接"></a>长连接</h5><p>对于长连接，TCP连接并不会在一次通信完成后就执行四次挥手来断开连接，而是一直保持连接。通过定时发送心跳检测数据包来维持连接。<br>长连接对于服务器的压力会非常大，普通的开发者难以实现。</p>
+<h3 id="TLS握手"><a href="#TLS握手" class="headerlink" title="TLS握手"></a>TLS握手</h3><p>TLS（Transport Layer Security，传输层安全）旨在为网络通信过程提供安全及数据完整的传输。<br>在TCP/IP四层模型中，介于应用层和传输层之间。</p>
+<p>TLS的握手过程大致如下：</p>
+<ol>
+<li>客户端发送一个Hello消息到服务器端，消息主要用来告知服务器端，客户端使用的TLS的版本，可用的加密算法和压缩算法。</li>
+<li>服务器端返回一个Hello消息到客户端，消息用于确认通信将使用的TLS版本，加密算法和压缩算法。另外还包括服务器的公开证书以及其公钥。</li>
+<li>客户端根据自己信任的CA列表，验证服务器端的证书是否有效。</li>
+<li>如果证书有效，则客户端生成一个伪随机数，并根据伪随机数生成对称密钥，并使用使用服务器端提供的公钥加密它，并发送给服务器。至此TLS握手完成。</li>
+<li>服务器使用私钥解密得到对称密钥，由此双方可以使用该对称密钥进行安全通信。</li>
+</ol>
+<h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><p><a target="_blank" rel="noopener" href="https://www.w3.org/Protocols/">HTTP</a>属于TCP/IP协议栈中的应用层协议。<br>通过TLS建立安全的TCP连接后，则可以通过HTTP请求来进行数据的传输了。</p>
+<p>HTTP请求包含多种类型，比如GET请求。</p>
+<p>一个GET请求的样例如下：</p>
+<pre><code>GET http://google.com/ HTTP/1.1
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:29.0) Gecko/20100101 Firefox/29.0
+
+Accept-Encoding: gzip, deflate
+
+Connection: Keep-Alive
+
+Host: google.com
+
+Cookie: datr=1265876274-[...]; locale=en_US; lsd=WW[...]; c_user=2101[...]</code></pre><p>如上所示，HTTP请求报文头部会在中放入一些元信息。<br>比如定义可以接受的响应文件类型（Accept），是否保持TCP连接（Connection），以及浏览器保存的Cookie信息（Cookie）。</p>
+<p>服务器处理完请求后，会返回一个HTTP响应。</p>
+<p>上述GET请求的响应如下：</p>
+<pre><code>HTTP/1.1 200 OK
+
+Cache-Control: private, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+
+Pragma: no-cache
+
+Content-Encoding: gzip
+
+Content-Type: text/html; charset=utf-8
+
+Connection: Keep-Alive
+
+Content-length: 1215
+
+Date: Sat, 10 Feb 2018 20:11:20 GMT</code></pre><p>如上所述，HTTP响应以返回的状态码开始，后面包括响应内容的编码方式（Content-Encoding），内容长度（Content-length）等。</p>
+<p>其中返回的状态码包括以下几类：</p>
+<ol>
+<li>1xx，信息类状态码，表示请求正在被处理。</li>
+<li>2xx，成功状态码，表示请求处理成功。</li>
+<li>3xx，重定向状态码，表示需要进行附加操作以完成请求。</li>
+<li>4xx，客户端错误状态码，表示服务器无法处理请求。</li>
+<li>5xx，服务器端错误状态码，表示服务器处理请求错误。</li>
+</ol>
+<h3 id="HTTP服务器请求处理"><a href="#HTTP服务器请求处理" class="headerlink" title="HTTP服务器请求处理"></a>HTTP服务器请求处理</h3><p>HTTPD（HTTP Daemon，HTTP后台驻留程序）在服务器端处理HTTP请求。<br>常见的HTTPD有Linux上的Apache和Nginx，Windows上的IIS。</p>
+<p>HTTPD处理HTTP请求的步骤如下：</p>
+<ol>
+<li>接收请求</li>
+<li>获取到请求方法、域名、请求路径</li>
+<li>验证服务器上已配置google.com的虚拟主机</li>
+<li>验证google.com接受GET方法</li>
+<li>验证该用户可以使用GET方法（根据IP地址，身份信息）</li>
+<li>如果服务器安装了URL重写模块，服务器会尝试匹配重写规则进行重写请求</li>
+<li>服务器根据请求信息获取到响应内容</li>
+<li>使用指定的程序处理响应内容，比如PHP来解析响应内容</li>
+</ol>
+<p>具体来说，在Java平台，我们常常会使用Tomcat来处理HTTP请求。<br>使用Tomcat来处理HTTP请求的步骤如下：</p>
+<ol>
+<li>HTTP请求被操作系统转发给Tomcat监听的端口</li>
+<li>解析请求并封装成Request对象</li>
+<li>Engine容器处理Request</li>
+<li>Host容器处理Request</li>
+<li>Context容器处理Request</li>
+<li>Wrapper容器处理Request</li>
+<li>逐级返回，最终返回Response对象，并转换成HTTP响应</li>
+</ol>
+<h2 id="浏览器解析"><a href="#浏览器解析" class="headerlink" title="浏览器解析"></a>浏览器解析</h2><p>当浏览器获取到服务器返回的HTTP响应文件后，浏览器会执行下面的操作：</p>
+<ol>
+<li>解析HTML，CSS，JS</li>
+<li>渲染（包括构建DOM，渲染，布局，绘制）</li>
+</ol>
+<h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><p>浏览器的主要功能是帮助用户请求资源，并进行展示。<br>这些资源通常是HTML，也可以是PDF，图片等其他文件。<br>资源的位置通过用户提供的URI(Uniform Resource Identifier)来确定。<br>目前通过HTTP请求访问的资源都提供了准确的访问地址，因此URI也是URL。</p>
+<p>浏览器解释和展示HTML文件的方法，在HTML和CSS的标准中有详细介绍。<br>这些标准由Web标准组织W3C(World Wide Web Consortium)维护。</p>
+<p>一个浏览器的组件主要包括以下几个部分：</p>
+<ol>
+<li><p>用户界面 </p>
+<p>用户界面包含了地址栏，前进后退按钮，书签菜单等等，除了请求页面之外所有你看到的内容都是用户界面的一部分。</p>
+</li>
+<li><p>浏览器引擎 </p>
+<p>浏览器引擎负责让UI和渲染引擎协调工作。</p>
+</li>
+<li><p>渲染引擎 </p>
+<p>渲染引擎负责展示请求内容。如果请求的内容是HTML，渲染引擎会解析HTML和CSS，然后将内容展示在屏幕上。</p>
+</li>
+<li><p>网络组件 </p>
+<p>网络组件负责网络调用，例如HTTP请求等，使用一个平台无关接口，下层是针对不同平台的具体实现。</p>
+</li>
+<li><p>UI后端 </p>
+<p>UI后端用于绘制基本UI组件，例如下拉列表框和窗口。<br>UI后端暴露一个统一的平台无关的接口，下层使用操作系统的UI方法实现</p>
+</li>
+<li><p>Javascript解释器 </p>
+<p>Javascript解释器用于解析和执行Javascript代码。</p>
+</li>
+<li><p>数据存储 </p>
+<p>数据存储组件是一个持久层。浏览器可能需要在本地存储各种各样的数据，例如Cookie等。<br>浏览器也需要支持诸如localStorage，IndexedDB，WebSQL和FileSystem之类的存储机制。</p>
+</li>
+</ol>
+<h3 id="HTML解析"><a href="#HTML解析" class="headerlink" title="HTML解析"></a>HTML解析</h3><p>浏览器拿到具体的HTML文档之后，调用浏览器引擎中的HTML Parser来将HTML文档解析成为DOM树，将以便外部接口（JS）调用。</p>
+<p>整个解析分为两步：</p>
+<ol>
+<li><p>文档内容解析</p>
+<p>从HTTP的Response中分析出结构化的信息，让HTML解析器可以很方便地提取数据进行其他操作。<br>这个过程包括两个内容：</p>
+<ol>
+<li>词法分析，将字符串切分成符合特定语法规范的符号</li>
+<li>语法分析，根据符合语法规范的符号构建对应该文档的语法树</li>
+</ol>
+</li>
+<li><p>HTML解析</p>
+<p>根据HTML语法，将HTML标记到语法树上构建成DOM(Document Object Model)。</p>
+</li>
+</ol>
+<h3 id="CSS解析"><a href="#CSS解析" class="headerlink" title="CSS解析"></a>CSS解析</h3><p>根据CSS词法和句法分析CSS文件和<code>&lt;style&gt;</code>标签包含的内容以及style属性的值。<br>每个CSS文件都被解析成一个样式表对象（StyleSheet object），这个对象里包含了带有选择器的CSS规则，和对应CSS语法的对象。</p>
+<h3 id="页面渲染"><a href="#页面渲染" class="headerlink" title="页面渲染"></a>页面渲染</h3><p>HTML解析后会得到一个DOM节点树。页面渲染时，首先会通过遍历这个DOM节点树创建一个“Frame树”或“渲染树”，并计算每个节点的各个CSS样式值。</p>
+<h3 id="GPU渲染"><a href="#GPU渲染" class="headerlink" title="GPU渲染"></a>GPU渲染</h3><p>在渲染过程中，图形处理层可能使用通用用途的CPU，也可能使用图形处理器GPU。<br>当使用GPU用于图形渲染时，图形驱动软件会把任务分成多个部分，这样可以充分利用GPU强大的并行计算能力，用于在渲染过程中进行大量的浮点计算。</p>
+<h3 id="后期渲染与用户引发的处理"><a href="#后期渲染与用户引发的处理" class="headerlink" title="后期渲染与用户引发的处理"></a>后期渲染与用户引发的处理</h3><p>渲染结束后，浏览器根据某些时间机制运行JavaScript代码(比如Google Doodle动画)或与用户交互(在搜索栏输入关键字获得搜索建议)。<br>类似Flash和Java的插件也会运行。这些脚本可以触发网络请求，也可能改变网页的内容和布局，产生又一轮渲染与绘制。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
+<li>What happens when you type a URL in browser[EB/OL] Pankaj Pal. <a target="_blank" rel="noopener" href="http://edusagar.com/articles/view/70/What-happens-when-you-type-a-URL-in-browser">http://edusagar.com/articles/view/70/What-happens-when-you-type-a-URL-in-browser</a>. 2018-02-10.</li>
+<li>Address resolution mechanism[EB/OL] wikipedia. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Domain_Name_System#Address_resolution_mechanism">https://en.wikipedia.org/wiki/Domain_Name_System#Address_resolution_mechanism</a>. 2018-02-10.</li>
+<li>在浏览器中输入Google.com并且按下回车之后发生了什么？[EB/OL] cnblogs. <a target="_blank" rel="noopener" href="https://kb.cnblogs.com/page/516964">https://kb.cnblogs.com/page/516964</a>. 2018-02-10.</li>
+</ol>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Regres</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://notes.wang/2017/12/10/2017-12-10-dang-ni-zai-liu-lan-qi-shu-ru-url-bing-hui-che-fa-sheng-liao-shi-me/">https://notes.wang/2017/12/10/2017-12-10-dang-ni-zai-liu-lan-qi-shu-ru-url-bing-hui-che-fa-sheng-liao-shi-me/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Regres</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/os/">
+                                    <span class="chip bg-color">os</span>
+                                </a>
+                            
+                                <a href="/tags/browser/">
+                                    <span class="chip bg-color">browser</span>
+                                </a>
+                            
+                                <a href="/tags/dns/">
+                                    <span class="chip bg-color">dns</span>
+                                </a>
+                            
+                                <a href="/tags/arp/">
+                                    <span class="chip bg-color">arp</span>
+                                </a>
+                            
+                                <a href="/tags/tcp/">
+                                    <span class="chip bg-color">tcp</span>
+                                </a>
+                            
+                                <a href="/tags/http/">
+                                    <span class="chip bg-color">http</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'CNCdAc25kv9LrKxaBmLs8a0s-gzGzoHsz',
+        appKey: 'z68jAhF522fybYhkWXOP7iLa',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2017/12/16/2017-12-16-csrf-ji-chu-yu-shi-jian/">
+                    <div class="card-image">
+                        
+                        <img src="/images/csrf.png" class="responsive-img" alt="CSRF基础与实践">
+                        
+                        <span class="card-title">CSRF基础与实践</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            你了解CSRF吗？有哪些防御手段？应该怎么选择？
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2017-12-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/security/" class="post-category">
+                                    security
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/csrf/">
+                        <span class="chip bg-color">csrf</span>
+                    </a>
+                    
+                    <a href="/tags/web/">
+                        <span class="chip bg-color">web</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2017/11/27/2017-11-27-api-de-bu-tong-jia-gou-feng-ge-gai-shu/">
+                    <div class="card-image">
+                        
+                        <img src="/images/restful-api.png" class="responsive-img" alt="API的不同架构风格概述">
+                        
+                        <span class="card-title">API的不同架构风格概述</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            你知道几种API架构风格？他们都有什么不同？有什么特点？
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-11-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/dev/" class="post-category">
+                                    dev
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/api/">
+                        <span class="chip bg-color">api</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 一点雨见<br />'
+            + '文章作者: Regres<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">Regres</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+<!--            -->
+<!--            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span-->
+<!--                class="white-color">43.8k</span>&nbsp;字-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_pv">-->
+<!--                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"-->
+<!--                    class="white-color"></span>&nbsp;次-->
+<!--            </span>-->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_uv">-->
+<!--                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"-->
+<!--                    class="white-color"></span>&nbsp;人-->
+<!--            </span>-->
+<!--            -->
+<!--            <br>-->
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "6";
+                    var startDate = "13";
+                    var startHour = "18";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.miitbeian.gov.cn" target="_blank">渝ICP备18006605号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/regreser" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:colewangyu@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

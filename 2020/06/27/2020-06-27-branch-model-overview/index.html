@@ -1,0 +1,1497 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="分支模型：概览, 一点雨见">
+    <meta name="description" content="Electronic Notes of my personal insight">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126136790-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-126136790-1');
+</script>
+
+
+    <title>分支模型：概览 | 一点雨见</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="一点雨见" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">一点雨见</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">一点雨见</div>
+        <div class="logo-desc">
+            
+            Electronic Notes of my personal insight
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/branch-model.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">分支模型：概览</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/branch-model/">
+                                <span class="chip bg-color">branch model</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/devops/" class="post-category">
+                                devops
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-06-27
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-15
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    21 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="1-版本管理工具"><a href="#1-版本管理工具" class="headerlink" title="1. 版本管理工具"></a>1. 版本管理工具</h2><blockquote>
+<p>工欲善其事，必先利其器。 ——《论语·卫灵公》</p>
+</blockquote>
+<p>版本管理，在软件开发中，特指对软件源码，以及相关文件的版本管理。</p>
+<p>在软件开发过程中，需要用到形形色色的工具，版本管理工具绝对是无法绕开的一个，也是软件开发最开始就非常需要的工具。</p>
+<h3 id="1-1-历史"><a href="#1-1-历史" class="headerlink" title="1.1 历史"></a>1.1 历史</h3><p>早在1972年，世界上第一款版本管理工具<strong>SCCS</strong>（Source Code Control System，源代码控制系统）遍开始流行<sup>[1]</sup>，提供最基础核心的源码多版本存储功能。</p>
+<p>到1986年<strong>CVS</strong><sup>[1]</sup>（Concurrent Versions System，协作版本系统）发布。CVS提供将不同文件放到同一目录中，并提供层及目录，以及首次提供服务器和开发人员本地源码进行同步的功能，使其很快便流行开来，成为主流。</p>
+<p>到2000年，<strong>Subversion</strong><sup>[2]</sup>（简称SVN）的发布，旨在替代CVS，成为新世纪的王者。SVN的众多新特性，比如全局统一的版本号，原子提交，提交可以记录重命名、复制、删除，极小的分支开销等等，使得其迅速替代CVS，一直流行到2010年代，甚至一直到现在（2020年）都还有不少项目仍在使用。</p>
+<p>以上版本控制工具，除SCCS是仅用于本地开发以外，CVS和SVN因为存在一个中央服务器来存储所有的源码和文件，被称为<strong>CVC</strong>（Centralized Version Control，集中式版本控制）。与之对应的，<strong>DVC</strong>（Distributed Version Control，分布式版本控制），即不需要一个专门的中央服务器来存储源码和文件。</p>
+<p>最早的DVC，是1992年发布的<strong>Sun WorkShop TeamWare</strong><sup>[3]</sup>，不过仅作为Sun公司的内部版本管理工具。</p>
+<p>2000年，<strong>BitKeeper</strong><sup>[4]</sup>诞生，借鉴了TeamWare。BitKeeper借助DVC天然具有的分支零消耗，无需与中央服务器通信便可以离线编辑等等优势，在市场上博得了一席之地。也在2000年到2005年间一直作为Linux内核源码的版本管理工具。并在2016年开源。</p>
+<p>2005年，日后版本控制界真正的王者，如今占据软件开发市场半壁江山的<strong>Git</strong><sup>[6]</sup>诞生。Git的诞生是为了能够接替BitKeeper，成为Linux内核源码的版本管理工具。主要由于BitKeeper作为商业软件，用来管理Linux这样一款鼎鼎大名的开源操作系统，显得有些讽刺。于是乎Linux作者，Linus Torvalds花了10天时间完成了Git的第一个版本。而后面的发展也是超出了大家的预期，Git如今（2020年）已是绝对的王者。不管是源码托管服务商Github、GitLab，国内的Gitee，还是流行的商业软件如BitBucket，都基于Git开发。全球最著名的云服务提供商AWS和Azure提供的源码管理服务（AWS的Codecommit，Azure的Azure DevOps）也都是基于Git实现。由此可见，Git如今的火爆程度可见一斑。</p>
+<h3 id="1-2-为什么要使用版本管理"><a href="#1-2-为什么要使用版本管理" class="headerlink" title="1.2 为什么要使用版本管理"></a>1.2 为什么要使用版本管理</h3><p>理由很多，说几个重要的：</p>
+<ol>
+<li><p>多版本</p>
+<p> 这是最原始的需求，也是版本管理工具提供的最核心的功能。使用版本管理工具，可以查看不同版本的源码，并切换到不同的版本。这让同一软件发布不同版本不再是一件难以完成的任务。对于不满意的修改也可以随时方便地撤销。</p>
+</li>
+<li><p>多分支</p>
+<p> 使得同一软件的不同版本同时开发成为可能，发布不同版本也更加容易。除了不同版本的开发和发布以外，不同的开发目的也可以通过分支来区别，比如developer分支用于开发，master分支用于发布，feature分支用于某一特性的开发。这些不同的分支让越来越复杂的软件开发变得更加井井有条。</p>
+</li>
+<li><p>协同合作</p>
+<p> 如今的软件开发越发复杂，几乎一定是团队协作完成。在多人合作的场景下，同时编辑一个文档在所难免，但同时编辑无法避免会带来冲突。最简单的避免冲突的方法就是编辑前通知其他也可能编辑该文件的伙伴先不要进行编辑，必须等你编辑完成后才能对该文件进行编辑。而有了版本管理，通知的事情大可以交给版本管理软件去完成。另外还可能存在完成文档修改后出现问题，版本管理也能快速帮你回退到之前的文档版本，帮助你定位或者快速修复问题。</p>
+</li>
+</ol>
+<h3 id="CVC和DVC"><a href="#CVC和DVC" class="headerlink" title="CVC和DVC"></a>CVC和DVC</h3><h4 id="CVC（Centralized-Version-Control，集中式版本控制）"><a href="#CVC（Centralized-Version-Control，集中式版本控制）" class="headerlink" title="CVC（Centralized Version Control，集中式版本控制）"></a>CVC（Centralized Version Control，集中式版本控制）</h4><p>上文例举了一些典型的CVC和DVC工具，其中CVC的优劣都很明显，其中优势：</p>
+<ol>
+<li>中心节点对用户进行认证和授权，可以精细控制指定用户对于指定文件的权限。</li>
+<li>中心节点通过对文件加锁，避免多人同时修改同一文件后进行合并而产生冲突。</li>
+<li>开发进行修改时仅需要下载需要的部分文件，而不是整个项目。</li>
+</ol>
+<p>劣势：</p>
+<ol>
+<li>执行操作的速度慢，因为需要和中心节点进行通信，甚至还需要先解决冲突。</li>
+<li>多人同时修改相同文件需要等待解锁。</li>
+<li>出错后难以恢复，因为很难有完整副本。</li>
+<li>必须联网才能使用。</li>
+</ol>
+<p>常用的CVC软件：</p>
+<ol>
+<li>CVS</li>
+<li>Subversion</li>
+</ol>
+<h4 id="DVC（Distributed-Version-Control，分布式版本控制）"><a href="#DVC（Distributed-Version-Control，分布式版本控制）" class="headerlink" title="DVC（Distributed Version Control，分布式版本控制）"></a>DVC（Distributed Version Control，分布式版本控制）</h4><p>相较于CVC，DVC没有中心节点。开发将完整的仓库以及历史提交均保存到本地。任何对仓库的操作都是直接在本地进行操作。这一特点带给了DVC天然的优势：</p>
+<ol>
+<li>对仓库的操作速度很快，因为均为本地操作。</li>
+<li>多人操作同一文件时无需等待锁。</li>
+<li>可以离线使用</li>
+<li>服务端出错后通过分布的任何一个仓库可以较好的恢复数据</li>
+</ol>
+<p>劣势：</p>
+<ol>
+<li>难以进行目录和文件级别的权限控制</li>
+<li>合并时很可能需要解决冲突</li>
+</ol>
+<p>常用的DVC软件：</p>
+<ol>
+<li>Git</li>
+<li>Mercurial</li>
+</ol>
+<p>如今这个提倡小而快的时代，DVC更加受欢迎。多人协同工作，而无需担心不能同时修改相同的文件，也无需管理笨重的中心服务器，或是处理繁琐的权限控制。更重要的是，敏捷和DevOps思想的持续火热，CICD（Continuous Integration &amp; Continuous Delivery）和Pipeline几乎成为团队必备的实践，而这样的实践所依赖的频繁的分支操作，DVC也更加适合。而DVC的众多软件中，Git无疑是当下最被频繁使用的一个。</p>
+<h2 id="2-Git使用场景"><a href="#2-Git使用场景" class="headerlink" title="2. Git使用场景"></a>2. Git使用场景</h2><p>Git作为最火热的版本管理工具，被极为广泛的使用。简单如个人的小插件开发，两三个人的小应用开发，复杂如几十人的大型软件工程项目，都有它的身影。在这些不同的使用场景下，Git的使用方法也完全不同。</p>
+<h3 id="2-1-单独开发"><a href="#2-1-单独开发" class="headerlink" title="2.1 单独开发"></a>2.1 单独开发</h3><p>一个人开发，最简单的Git使用场景，仅仅需要最基础的功能：</p>
+<ol>
+<li>代码的多版本储存（可以方便的切换到任意版本）</li>
+</ol>
+<h3 id="2-2-三个人的小团队"><a href="#2-2-三个人的小团队" class="headerlink" title="2.2 三个人的小团队"></a>2.2 三个人的小团队</h3><p>情况开始变得复杂，少量的协作出现。需要的功能点也更多：</p>
+<ol>
+<li>代码的多版本储存</li>
+<li>简单的多分支（不同的人工作在不同的分支）</li>
+<li>偶尔的冲突</li>
+</ol>
+<h3 id="2-3-十几个人的敏捷团队"><a href="#2-3-十几个人的敏捷团队" class="headerlink" title="2.3 十几个人的敏捷团队"></a>2.3 十几个人的敏捷团队</h3><p>十几个人同时工作在一个代码库上，大量的协作出现，甚至会出现大量的分支：</p>
+<ol>
+<li>代码的多版本储存</li>
+<li>复杂的多分支</li>
+<li>较多的冲突</li>
+</ol>
+<h3 id="2-4-数十上百人的大型团队"><a href="#2-4-数十上百人的大型团队" class="headerlink" title="2.4 数十上百人的大型团队"></a>2.4 数十上百人的大型团队</h3><p>通常会同时工作在多个版本，不同团队负责不同的版本。这样的规模的团队，已经不适合使用Git了，更好的方式是拆分，同时工作在一个代码库会显得非常笨重和难以维护。这个时候对于Git的功能点需求，其实并没有变得更多，只是对于分支的使用会变得复杂。此时的需求主要是：</p>
+<ol>
+<li>代码的多版本储存</li>
+<li>复杂的多分支</li>
+<li>大量的冲突</li>
+</ol>
+<h2 id="3-Git分支模型"><a href="#3-Git分支模型" class="headerlink" title="3. Git分支模型"></a>3. Git分支模型</h2><p>使用Git的过程中，随着团队规模的扩大，代码管理越来越复杂，而要做好代码管理，最重要的就是要做好分支的管理。因为现在的开发过程中必然需要处理CICD和多环境，紧急修复Bug，解决冲突合并代码，多Feature同步开发等等这样的情况。一条分支无法满足多人同时工作的需求，同一时间内同一个软件项目一定需要存在不同的状态，而多分支就可以满足这个需求。那如何设计和管理分支？如何更好的进行多人协同开发，更好的处理多版本发布？这时就需要一个好的分支使用方案，或者说是需要一个好的分支模型。市面上已经有很多很成熟的分支模型。</p>
+<h3 id="3-1-Git-Flow-6"><a href="#3-1-Git-Flow-6" class="headerlink" title="3.1 Git Flow[6]"></a>3.1 Git Flow<sup>[6]</sup></h3><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gg85pazb7kj30u013sq9j.jpg" alt="git flow" style="zoom:67%;" />
+
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><p>2010年提出的Git分支模型，也是最早开始流行的Git分支模型。</p>
+<p><strong>两条长期分支</strong></p>
+<ol>
+<li><p>master</p>
+<p>最核心的分支，与当前线上的版本始终保持一致。</p>
+</li>
+<li><p>develop</p>
+<p>开发分支，与当前已经开发完成的feature保持一致。</p>
+</li>
+</ol>
+<p><strong>三种短期分支</strong></p>
+<ol>
+<li><p>feature（多条并存）</p>
+<p>开发功能的分支，一个功能对应一条，开发完成后，就会删除。</p>
+</li>
+<li><p>release（多条并存）</p>
+<p>发布版本时使用的分支，一次发布对应一条，发布完成后，就会删除。</p>
+</li>
+<li><p>hotfix（多条并存）</p>
+<p>紧急修复版本时使用的分支，一次紧急修复对应一条，修复完成后，就会删除。</p>
+</li>
+</ol>
+<h4 id="流程（假设有dev，qa，pre-prod，prod四个环境）"><a href="#流程（假设有dev，qa，pre-prod，prod四个环境）" class="headerlink" title="流程（假设有dev，qa，pre-prod，prod四个环境）"></a>流程（假设有dev，qa，pre-prod，prod四个环境）</h4><p><strong>开发流程</strong></p>
+<ol>
+<li>从develop分支签出新的feature分支。</li>
+<li>开发完成，部署并通过dev环境中的测试后，将feature分支合并回develop分支，然后删除feature分支。</li>
+</ol>
+<p><strong>部署流程</strong></p>
+<ol>
+<li>新代码merge到develop分支后，自动将develop分支部署到dev环境中，进行测试。（与开发流程中的步骤重叠）</li>
+<li>在dev环境中测试通过后，将同一个构建物部署到qa，进行测试。</li>
+<li>通过测试后，即完成除发布以外的所有部署流程。</li>
+</ol>
+<p><strong>发布流程</strong></p>
+<ol>
+<li>从develop分支签出新的release分支。</li>
+<li>发布过程中的代码修改（可能是临时修复问题）。</li>
+<li>将release分支合并到develop分支，以合并在release分支上进行的代码修改。</li>
+<li>在release分支的发布准备工作完成后，将release分支合并到master分支，并打上版本tag，发布到pre-prod环境中，进行测试。</li>
+<li>在pre-prod环境中测试完成后，将统一构建物部署到prod环境，并进行测试。</li>
+<li>在prod环境中测试通过后，将release分支合并到develop分支。</li>
+<li>删除release分支，完成发布。</li>
+</ol>
+<p><strong>紧急修复流程</strong></p>
+<ol>
+<li>从master签出新的hotfix分支。</li>
+<li>修复完成后，将hotfix分支合并到master分支，打上版本tag，进行发布，同时将hotfix分支合并到develop分支。</li>
+<li>将hotfix分支删除。</li>
+</ol>
+<h3 id="3-2-Github-Flow-7"><a href="#3-2-Github-Flow-7" class="headerlink" title="3.2 Github Flow[7]"></a>3.2 Github Flow<sup>[7]</sup></h3><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gg85pdqffpj31gi0hujt7.jpg" alt="github flow" style="zoom:67%;" />
+
+<h4 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h4><p>2011年，由代码托管服务提供商Github提出的Git分支模型，广泛运用于开源项目。</p>
+<p><strong>一条长期分支</strong></p>
+<ol>
+<li><p>master</p>
+<p>唯一的长期分支，团队会尽量保证该分支一直处于可发布的状态。</p>
+</li>
+</ol>
+<p><strong>一种短期分支</strong></p>
+<ol>
+<li><p>feature（多条并存）</p>
+<p>开发功能的分支，一个功能对应一条，开发完成，合并到master分支后就会被删除。</p>
+</li>
+</ol>
+<h4 id="流程（假设有dev，qa，pre-prod，prod四个环境）-1"><a href="#流程（假设有dev，qa，pre-prod，prod四个环境）-1" class="headerlink" title="流程（假设有dev，qa，pre-prod，prod四个环境）"></a>流程（假设有dev，qa，pre-prod，prod四个环境）</h4><p><strong>开发流程</strong></p>
+<ol>
+<li>从master分支签出新的feature分支。</li>
+<li>开发完成后，创建PR（Pull Request，合并请求），</li>
+<li>PR通过团队审核，并通过全部测试后，将feature分支合并回master分支，然后删除feature分支。</li>
+</ol>
+<p><strong>部署流程</strong></p>
+<ol>
+<li>新代码merge到master分支后，自动将master分支部署到dev环境中，进行测试。（与开发流程中的步骤重叠）</li>
+<li>在dev环境中测试通过后，将同一个构建物部署到qa，进行测试。</li>
+<li>通过测试后，即完成除发布以外的所有部署流程。</li>
+</ol>
+<p><strong>发布流程</strong></p>
+<ol>
+<li>保证将要发布的master分支代码已经通过了除dev和qa环境的所有测试。</li>
+<li>将同一构建物部署到pre-prod环境中，进行测试。</li>
+<li>测试通过后，将统一构建物部署到prod环境，进行测试。</li>
+<li>打上tag，完成发布。</li>
+</ol>
+<p><strong>紧急修复流程</strong></p>
+<p>与开发流程一致。</p>
+<h3 id="3-3-Trunk-Based-8"><a href="#3-3-Trunk-Based-8" class="headerlink" title="3.3 Trunk Based[8]"></a>3.3 Trunk Based<sup>[8]</sup></h3><p>Trunk Based有两种具体的分支模型，第一种：<strong>Trunk-Based Development For Smaller Teams</strong>，另外一种Trunk Based：<strong>Scaled Trunk-Based Development</strong>。</p>
+<h4 id="3-3-1-Trunk-Based-Development-For-Smaller-Teams"><a href="#3-3-1-Trunk-Based-Development-For-Smaller-Teams" class="headerlink" title="3.3.1 Trunk-Based Development For Smaller Teams"></a>3.3.1 Trunk-Based Development For Smaller Teams</h4><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gg85pcrwwoj31540hw775.jpg" alt="trunk based - smaller team" style="zoom:50%;" />
+
+<h4 id="特点-2"><a href="#特点-2" class="headerlink" title="特点"></a>特点</h4><p><strong>一条长期分支</strong></p>
+<ol>
+<li><p>master(trunk)</p>
+<p>唯一的长期分支，团队会尽量保证该分支一直处于可发布的状态。</p>
+</li>
+</ol>
+<p><strong>一种特殊分支</strong></p>
+<ol>
+<li><p>release（多条并存）</p>
+<p>每次发布时创建的分支，仅用于发布，开发不能在分支上进行任何提交。</p>
+</li>
+</ol>
+<h4 id="流程（假设有dev，qa，pre-prod，prod四个环境）-2"><a href="#流程（假设有dev，qa，pre-prod，prod四个环境）-2" class="headerlink" title="流程（假设有dev，qa，pre-prod，prod四个环境）"></a>流程（假设有dev，qa，pre-prod，prod四个环境）</h4><p><strong>开发流程</strong></p>
+<ol>
+<li>在本地的master分支上进行开发。</li>
+<li>开发完成后，通过git push命令将本地master合并到远程的master分支，合并前会自动进行build（包括单元测试）。</li>
+<li>合并后进行测试（理想状态下是完全的自动化测试，不够理想的状态是自动化测试+人工测试），保证本次合并的代码可以被发布，如果测试失败，需要重复1、2步骤，直到测试通过。</li>
+</ol>
+<p><strong>部署流程</strong></p>
+<ol>
+<li>新代码merge到master分支后，自动将master分支部署到dev环境中，进行测试。（与开发流程中的步骤重叠）</li>
+<li>在dev环境中测试通过后，将同一个构建物部署到pre-prod，进行测试。</li>
+<li>通过测试后，即完成除部署prod以外的所有部署流程。</li>
+</ol>
+<p><strong>发布流程</strong></p>
+<ol>
+<li>master分支的代码已经通过了除prod环境以外的所有环境的测试。</li>
+<li>从master签出release分支，进行发布，同时打上tag。</li>
+<li>发布成功后，删除release分支。</li>
+</ol>
+<p><strong>紧急修复流程</strong></p>
+<p>与开发流程一致。</p>
+<h4 id="3-3-2-Scaled-Trunk-Based-Development"><a href="#3-3-2-Scaled-Trunk-Based-Development" class="headerlink" title="3.3.2 Scaled Trunk-Based Development"></a>3.3.2 Scaled Trunk-Based Development</h4><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gg85pahok9j31560k4n0d.jpg" alt="trunk based - scaled team" style="zoom:50%;" />
+
+<h4 id="特点-3"><a href="#特点-3" class="headerlink" title="特点"></a>特点</h4><p><strong>一条长期分支</strong></p>
+<ol>
+<li><p>master(trunk)</p>
+<p>唯一的长期分支，团队会尽量保证该分支一直处于可发布的状态。</p>
+</li>
+</ol>
+<p><strong>两种短期分支</strong></p>
+<ol>
+<li><p>feature（多条并存）</p>
+<p>开发功能的分支，一个功能对应一条，开发完成，合并到master分支后就会被删除。</p>
+</li>
+<li><p>release（多条并存）</p>
+<p>每次发布时创建的分支，仅用于发布，开发不能在分支上进行任何提交。</p>
+</li>
+</ol>
+<h4 id="流程（假设有dev，qa，pre-prod，prod四个环境）-3"><a href="#流程（假设有dev，qa，pre-prod，prod四个环境）-3" class="headerlink" title="流程（假设有dev，qa，pre-prod，prod四个环境）"></a>流程（假设有dev，qa，pre-prod，prod四个环境）</h4><p><strong>开发流程</strong></p>
+<ol>
+<li>从master分支签出新的feature分支。</li>
+<li>开发完成后，创建PR（Pull Request，合并请求）。</li>
+<li>PR通过团队审核，并通过全部测试后，将feature分支合并回master分支，然后删除feature分支。</li>
+</ol>
+<p><strong>部署流程</strong></p>
+<ol>
+<li>将master部署到dev环境，进行测试。</li>
+<li>测试通过后，将同一产出物，部署到qa环境，进行测试。</li>
+<li>测试通过后，完成除发布以外的部署流程。</li>
+</ol>
+<p><strong>发布流程</strong></p>
+<ol>
+<li>master分支的代码已经通过了除prod环境以外的所有环境的测试。</li>
+<li>从master签出release分支，发布到pre-prod环境，进行测试。</li>
+<li>测试通过后，发布到prod环境，进行测试。</li>
+<li>测试通过，删除release分支，完成发布。</li>
+</ol>
+<p><strong>紧急修复流程</strong></p>
+<p>与开发流程一致。</p>
+<h3 id="3-4-GitLab-Flow-9"><a href="#3-4-GitLab-Flow-9" class="headerlink" title="3.4 GitLab Flow[9]"></a>3.4 GitLab Flow<sup>[9]</sup></h3><p>Github flow有两种使用方法，针对需要做持续发布，且不存在多版本共存的项目，使用<strong>环境分支(Environment Branches)</strong>，针对需要发布不同版本的项目，使用<strong>发布分支(Reelase Branches)</strong>。</p>
+<h4 id="3-4-1-环境分支模式"><a href="#3-4-1-环境分支模式" class="headerlink" title="3.4.1 环境分支模式"></a>3.4.1 环境分支模式</h4><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gg85pbv139j30oe0qgdh1.jpg" alt="gitlab flow - environment branches" style="zoom:50%;" />
+
+<h4 id="特点-4"><a href="#特点-4" class="headerlink" title="特点"></a>特点</h4><p><strong>多条长期分支</strong></p>
+<ol>
+<li><p>master</p>
+<p>开发分支，保持代码最新。并且用于部署到开发环境。</p>
+</li>
+<li><p>environment（多条并存）</p>
+<p>根据情况，创建多条环境分支，比如pre-prod和prod分支。各个环境分支用于部署对应的环境。其中prod分支用于发布到产品环境。</p>
+</li>
+</ol>
+<p><strong>一种短期分支</strong></p>
+<ol>
+<li><p>feature（多条并存）</p>
+<p>开发功能的分支，一个功能对应一条，开发完成，合并到master分支后就会被删除。</p>
+</li>
+</ol>
+<h4 id="流程（假设有dev，qa，pre-prod，prod四个环境）-4"><a href="#流程（假设有dev，qa，pre-prod，prod四个环境）-4" class="headerlink" title="流程（假设有dev，qa，pre-prod，prod四个环境）"></a>流程（假设有dev，qa，pre-prod，prod四个环境）</h4><p><strong>开发流程</strong></p>
+<ol>
+<li>从master分支签出新的feature分支。</li>
+<li>开发完成后，创建MR（Merge Request，合并请求）。</li>
+<li>MR通过团队审核，自动部署到dev环境，通过全部自动测试后，将feature分支合并回master分支，然后删除feature分支。</li>
+</ol>
+<p><strong>部署流程</strong></p>
+<ol>
+<li>MR通过后，自动部署到dev环境，通过全部自动测试后，将feature分支合并回master分支，然后删除feature分支。（与开发流程中的步骤重叠）。</li>
+<li>将dev分支merge到qa分支上，触发qa的CICD进行部署，并进行测试。</li>
+<li>测试通过后，完成除发布以外的部署流程。</li>
+</ol>
+<p><strong>发布流程</strong></p>
+<ol>
+<li>将pre-prod分支merge到prod分支上，触发prod的CICD。</li>
+<li>部署到prod后进行测试，通过全部测试后，部署完成。</li>
+</ol>
+<p><strong>紧急修复流程</strong></p>
+<ol>
+<li>从master分支签出新的hotfix分支。</li>
+<li>开发完成后，创建MR（Merge Request，合并请求）。</li>
+<li>MR通过团队审核，并通过全部测试后，将hotfix分支合并回master分支。</li>
+<li>经过部署和发布流程，发布成功后，删除hotfix分支。</li>
+</ol>
+<h4 id="3-4-2-发布分支模式"><a href="#3-4-2-发布分支模式" class="headerlink" title="3.4.2 发布分支模式"></a>3.4.2 发布分支模式</h4><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gg85p96qf9j30nw0vg75g.jpg" alt="gitlab flow - release branches" style="zoom:50%;" />
+
+<h4 id="特点-5"><a href="#特点-5" class="headerlink" title="特点"></a>特点</h4><p><strong>多条长期分支</strong></p>
+<ol>
+<li><p>master</p>
+<p>开发分支，保持代码最新。并且用于部署到开发环境。</p>
+</li>
+<li><p>release（多条并存）</p>
+<p>为每个稳定的发布分支创建独立的发布分支。</p>
+</li>
+</ol>
+<p><strong>一种短期分支</strong></p>
+<ol>
+<li><p>feature（多条并存）</p>
+<p>开发功能的分支，一个功能对应一条，开发完成，合并到master分支后就会被删除。</p>
+</li>
+</ol>
+<h4 id="流程（假设有dev，qa，pre-prod，prod四个环境）-5"><a href="#流程（假设有dev，qa，pre-prod，prod四个环境）-5" class="headerlink" title="流程（假设有dev，qa，pre-prod，prod四个环境）"></a>流程（假设有dev，qa，pre-prod，prod四个环境）</h4><p><strong>开发流程</strong></p>
+<ol>
+<li>从master分支签出新的feature分支。</li>
+<li>开发完成后，创建MR（Merge Request，合并请求）。</li>
+<li>MR通过团队审核，自动部署到dev环境，通过全部自动测试后，将feature分支合并回master分支，然后删除feature分支。</li>
+</ol>
+<p><strong>部署流程</strong></p>
+<ol>
+<li>MR通过团队审核，自动部署到dev环境，进行测试。</li>
+<li>测试通过后，部署到qa环境，进行测试。</li>
+<li>测试通过后，完成除发布外的所有部署流程。</li>
+</ol>
+<p><strong>发布流程</strong></p>
+<ol>
+<li>从master签出release分支，打上tag，准备发布。</li>
+<li>构建release分支并部署到pre-prod环境中，进行测试。</li>
+<li>测试通过后，部署到prod环境，进行测试。</li>
+<li>测试通过后，发布完成。</li>
+</ol>
+<p><strong>紧急修复流程</strong></p>
+<ol>
+<li>从master分支签出新的hotfix分支。</li>
+<li>开发完成后，创建MR（Merge Request，合并请求）。</li>
+<li>MR通过团队审核，并通过全部测试后，将hotfix分支合并回master分支。</li>
+<li>release分支cherry-pick在hotfix分支上的提交，并重新发布。</li>
+<li>发布成功后，删除hotfix分支。</li>
+</ol>
+<h3 id="3-4-AnoFlow-10"><a href="#3-4-AnoFlow-10" class="headerlink" title="3.4 AnoFlow[10]"></a>3.4 AnoFlow<sup>[10]</sup></h3><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gg85p9xu3kj30wa0e8q4t.jpg" alt="anoflow" style="zoom:50%;" />
+
+<h4 id="特点-6"><a href="#特点-6" class="headerlink" title="特点"></a>特点</h4><p><strong>一条长期分支</strong></p>
+<ol>
+<li><p>master</p>
+<p>主干分支，用于保持和线上环境的一致性。</p>
+</li>
+</ol>
+<p><strong>三种短期分支</strong></p>
+<ol>
+<li><p>feature（多条并存）</p>
+<p>开发功能的分支，一个功能对应一条，发布完成后会被删除。</p>
+</li>
+<li><p>release（多条并存）</p>
+<p>用于发布的分支，一次发布对应一个分支。</p>
+</li>
+<li><p>hotfix（多条并存）</p>
+<p>用于紧急的bug修复，一次bug修复，对应一个分支。</p>
+</li>
+</ol>
+<h4 id="流程（假设有dev，qa，pre-prod，prod四个环境）-6"><a href="#流程（假设有dev，qa，pre-prod，prod四个环境）-6" class="headerlink" title="流程（假设有dev，qa，pre-prod，prod四个环境）"></a>流程（假设有dev，qa，pre-prod，prod四个环境）</h4><p><strong>开发流程</strong></p>
+<ol>
+<li>从master分支签出新的feature分支。</li>
+<li>代码开发完成后，将分支部署到dev环境，进行测试。</li>
+<li>测试通过后，完成开发。</li>
+</ol>
+<p><strong>部署流程</strong></p>
+<ol>
+<li>将feature分支部署到dev环境，进行测试。</li>
+<li>测试通过后，部署到qa环境，进行测试。</li>
+<li>测试通过后，完成除发布外的所有部署流程。</li>
+</ol>
+<p><strong>发布流程</strong></p>
+<ol>
+<li>从master签出release分支，将需要发布的feature branches合并到release分支。</li>
+<li>部署到pre-prod环境进行测试。</li>
+<li>测试通过后，部署到prod环境，进行测试。</li>
+<li>测试通过后，将release分支merge到master，并打上tag。</li>
+<li>删除release和对应的feature branches后，完成发布。</li>
+</ol>
+<p><strong>紧急修复流程</strong></p>
+<ol>
+<li>从master分支签出新的hotfix分支，修复bug后发布到pre-prod进行测试。</li>
+<li>测试通过后，发布到prod进行测试。</li>
+<li>通过全部测试后，将hotfix分支合并回master分支，并打上tag。</li>
+<li>删除hotfix分支，完成发布。</li>
+</ol>
+<h3 id="3-5-OneFlow-11"><a href="#3-5-OneFlow-11" class="headerlink" title="3.5 OneFlow[11]"></a>3.5 OneFlow<sup>[11]</sup></h3><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gg85peipocj30tc0n00ui.jpg" alt="one flow" style="zoom:50%;" />
+
+<h4 id="特点-7"><a href="#特点-7" class="headerlink" title="特点"></a>特点</h4><p><strong>两条长期分支</strong></p>
+<ol>
+<li><p>develop</p>
+<p>开发分支，与开发中的最新代码保持一致。</p>
+</li>
+<li><p>master</p>
+<p>发布分支，用于与线上环境的代码保持一致。</p>
+</li>
+</ol>
+<p><strong>三种短期分支</strong></p>
+<ol>
+<li><p>feature（多条并存）</p>
+<p>开发功能的分支，一个功能对应一条，完成开发后删除。</p>
+</li>
+<li><p>release（多条并存）</p>
+<p>用于发布的分支，一次发布对应一个分支，发布完成后删除。</p>
+</li>
+<li><p>hotfix（多条并存）</p>
+<p>用于紧急的bug修复，一次bug修复，对应一个分支，完成bug修复后删除。</p>
+</li>
+</ol>
+<h4 id="流程（假设有dev，qa，pre-prod，prod四个环境）-7"><a href="#流程（假设有dev，qa，pre-prod，prod四个环境）-7" class="headerlink" title="流程（假设有dev，qa，pre-prod，prod四个环境）"></a>流程（假设有dev，qa，pre-prod，prod四个环境）</h4><p><strong>开发流程</strong></p>
+<ol>
+<li>从develop分支签出新的feature分支。</li>
+<li>代码开发完成后，将feature分支合并到develop分支，并部署到dev环境，进行测试。</li>
+<li>测试通过后，完成开发，并删除feature分支。</li>
+</ol>
+<p><strong>部署流程</strong></p>
+<ol>
+<li>将develop分支部署到dev环境，进行测试。</li>
+<li>测试通过后，部署到qa环境，进行测试。</li>
+<li>测试通过后，完成除发布外的所有部署流程。</li>
+</ol>
+<p><strong>发布流程</strong></p>
+<ol>
+<li>从develop签出release分支，并部署到pre-prod环境进行测试。</li>
+<li>测试通过后，部署到prod环境，进行测试。</li>
+<li>测试通过后，将release分支merge到master，并打上tag。</li>
+<li>删除release分支，完成发布。</li>
+</ol>
+<p><strong>紧急修复流程</strong></p>
+<ol>
+<li>从master分支签出新的hotfix分支，修复bug后发布到pre-prod进行测试。</li>
+<li>测试通过后，发布到prod进行测试。</li>
+<li>通过全部测试后，将hotfix分支合并回master分支以及develop分支，并打上tag。</li>
+<li>删除hotfix分支，完成发布。</li>
+</ol>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] Wikipedia. 协作版本系统[EB/OL]. <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8D%94%E4%BD%9C%E7%89%88%E6%9C%AC%E7%B3%BB%E7%B5%B1">https://zh.wikipedia.org/wiki/%E5%8D%94%E4%BD%9C%E7%89%88%E6%9C%AC%E7%B3%BB%E7%B5%B1</a>. 2020-06-23</p>
+<p>[2] Wikipedia. Subversion[EB/OL]. <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Subversion">https://zh.wikipedia.org/wiki/Subversion</a>. 2020-06-23</p>
+<p>[3]Wikipedia. Sun WorkShop TeamWare[EB/OL]<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Sun_WorkShop_TeamWare">https://en.wikipedia.org/wiki/Sun_WorkShop_TeamWare</a>. 2020-06-23</p>
+<p>[4] Wikipedia. Bitkeeper[EB/OL]. <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/BitKeeper">https://zh.wikipedia.org/wiki/BitKeeper</a>. 2020-06-23</p>
+<p>[5] Wikipedia. Git[EB/OL]. <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Git#%E7%89%88%E6%9C%AC">https://zh.wikipedia.org/wiki/Git#%E7%89%88%E6%9C%AC</a>. 2020-06-23</p>
+<p>[6] Vincent Driessen. A successful Git branching model[EB/OL]. <a target="_blank" rel="noopener" href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a>. 2020-06-25</p>
+<p>[7] Scott Chacon. Github Flow[EB/OL]. <a target="_blank" rel="noopener" href="http://scottchacon.com/2011/08/31/github-flow.html">http://scottchacon.com/2011/08/31/github-flow.html</a>. 2020-06-25</p>
+<p>[8] trunkbaseddevelopment. Trunk Based Development[EB/OL]. <a target="_blank" rel="noopener" href="https://trunkbaseddevelopment.com/">https://trunkbaseddevelopment.com/</a>. 2020-06-25</p>
+<p>[9] Sytse Sijbrandij. Gitlab Flow[EB/OL]. <a target="_blank" rel="noopener" href="https://about.gitlab.com/blog/2014/09/29/gitlab-flow/">https://about.gitlab.com/blog/2014/09/29/gitlab-flow/</a>. 2020-06-25</p>
+<p>[10] segmentfault. 开发分支管理模型之阿里AoneFlow[EB/OL]. <a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000016373314">https://segmentfault.com/a/1190000016373314</a>. 2020-06-25</p>
+<p>[11] Adam Ruka. OneFlow – a Git branching model and workflow[EB/OL]. <a target="_blank" rel="noopener" href="https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow#variation-develop-master">https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow#variation-develop-master</a>. 2020-06-25</p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Regres</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://notes.wang/2020/06/27/2020-06-27-branch-model-overview/">https://notes.wang/2020/06/27/2020-06-27-branch-model-overview/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Regres</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/branch-model/">
+                                    <span class="chip bg-color">branch model</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'CNCdAc25kv9LrKxaBmLs8a0s-gzGzoHsz',
+        appKey: 'z68jAhF522fybYhkWXOP7iLa',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/11/14/2020-11-14-git-cang-ku-guan-li-submodule/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Git仓库管理：Submodule">
+                        
+                        <span class="card-title">Git仓库管理：Submodule</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            相互依赖的多个Git仓库如何管理
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/tool/" class="post-category">
+                                    tool
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/06/19/2020-06-19-aws-solution-architect-professional/">
+                    <div class="card-image">
+                        
+                        <img src="/images/aws-cert.png" class="responsive-img" alt="AWS Certification - Solutions Architect Professional">
+                        
+                        <span class="card-title">AWS Certification - Solutions Architect Professional</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            你了解AWS认证体系吗？拿到AWS Professional认证难度大吗？
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/devops/" class="post-category">
+                                    devops
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/aws/">
+                        <span class="chip bg-color">aws</span>
+                    </a>
+                    
+                    <a href="/tags/cert/">
+                        <span class="chip bg-color">cert</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 一点雨见<br />'
+            + '文章作者: Regres<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">Regres</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+<!--            -->
+<!--            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span-->
+<!--                class="white-color">43.8k</span>&nbsp;字-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_pv">-->
+<!--                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"-->
+<!--                    class="white-color"></span>&nbsp;次-->
+<!--            </span>-->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_uv">-->
+<!--                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"-->
+<!--                    class="white-color"></span>&nbsp;人-->
+<!--            </span>-->
+<!--            -->
+<!--            <br>-->
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "6";
+                    var startDate = "13";
+                    var startHour = "18";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.miitbeian.gov.cn" target="_blank">渝ICP备18006605号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/regreser" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:colewangyu@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

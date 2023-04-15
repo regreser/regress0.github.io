@@ -1,0 +1,1459 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="DevOps的疑惑-实践概览, 一点雨见">
+    <meta name="description" content="Electronic Notes of my personal insight">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126136790-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-126136790-1');
+</script>
+
+
+    <title>DevOps的疑惑-实践概览 | 一点雨见</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="一点雨见" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">一点雨见</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">一点雨见</div>
+        <div class="logo-desc">
+            
+            Electronic Notes of my personal insight
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">DevOps的疑惑-实践概览</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/software-engineering/">
+                                <span class="chip bg-color">software engineering</span>
+                            </a>
+                        
+                            <a href="/tags/agile/">
+                                <span class="chip bg-color">agile</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/devops/" class="post-category">
+                                devops
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-04-06
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-15
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    6.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    22 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="DevOps前世今生"><a href="#DevOps前世今生" class="headerlink" title="DevOps前世今生"></a>DevOps前世今生</h2><p>从日常实践的角度来说，DevOps是一系列软件工程实践的汇总，包括部署流水线、自动化测试等等。这些实践都来自于业界对于实践的不断总结和提炼，不断优化去尝试更好的解决软件工程的若干问题。</p>
+<p>这些实践也不是一开始就存在，而是不断的演进。讲到这些演进，就不得不说到被广泛采用的<code>瀑布式开发</code>。</p>
+<p>瀑布式开发是最早的软件开发流程，提倡阶段性开发，多批次部署，不同角色相互合作，负责不同的软件开发阶段。比如设计则专注于设计，开发专注于开发，测试专注于测试。即便瀑布式开发已经不再主流的今天，这样的思想也一直存在，在不少的团队中，仍然存在不同的角色。</p>
+<p>随着响应变化的需求越来越强烈和不可抗拒，敏捷开发应运而生。</p>
+<p>敏捷开发缩短了瀑布模式的部署周期，提倡更快更频繁地部署，接受错误，并不断试错。团队规模也变得更小，因此也更灵活。</p>
+<p>然而敏捷开发虽好，但也只是针对开发流程进行改进。软件生命周期很重要的一个阶段是“软件运行和维护阶段”，这也是软件产生价值的阶段（通常是运维团队负责），容易被开发团队忽略，但又是软件所有人最关心的部分之一。而这部分又正好是很容易出问题的部分。开发与运维团队配合的不默契导致了很多的问题。所以DevOps就是想要解决这些问题，让开发和运维团队更好的配合。更快更好地进行软件生命周期的最后一个，也是尤为重要的一个步骤——软件运行和维护阶段。</p>
+<h2 id="不同角度的DevOps定义"><a href="#不同角度的DevOps定义" class="headerlink" title="不同角度的DevOps定义"></a>不同角度的DevOps定义</h2><h3 id="打破Dev和Ops部门墙"><a href="#打破Dev和Ops部门墙" class="headerlink" title="打破Dev和Ops部门墙"></a>打破Dev和Ops部门墙</h3><p>DevOps实践很重要的目的就是打破Dev和Ops的部门墙，让两个部门更好地合作。Dev想要更快的变更部署，推送新的功能给用户，Ops想要更稳定的运行系统，保证不出错，更好的服务用户。两个不同的相互冲突的目的，让Dev和Ops天然的难以合作。</p>
+<p>DevOps则是希望通过从文化，软件开发实践的变革来打破这个部门墙。</p>
+<p>这算是非常直接的一种解释，毕竟Dev和Ops放在一起组成了DevOps。</p>
+<h3 id="敏捷的Ops"><a href="#敏捷的Ops" class="headerlink" title="敏捷的Ops"></a>敏捷的Ops</h3><p>另一方面，为了让软件工程的最后一公里（软件运行和维护阶段）敏捷起来，更好更快地部署上线。DevOps实践必不可少。通过进行部署流水线，自动化测试，Infrastructure as Code等实践来让软件运行和维护阶段更加适应变化。本质上，DevOps的内核也是精益敏捷。</p>
+<h2 id="DevOps实践-1"><a href="#DevOps实践-1" class="headerlink" title="DevOps实践[1]"></a>DevOps实践<sup>[1]</sup></h2><p>说了这么多DevOps的相关信息，最终落地还是得看DevOps实践。</p>
+<h3 id="实践一：文化变革"><a href="#实践一：文化变革" class="headerlink" title="实践一：文化变革"></a>实践一：文化变革</h3><p>进行DevOps实践，首当其冲的就是文化变革，如果不从组织最核心的人上进行变革，DevOps实践将难以为继。 </p>
+<p>文化变革应该包括以下几个方面：</p>
+<ol>
+<li><h4 id="建立安全信任的环境"><a href="#建立安全信任的环境" class="headerlink" title="建立安全信任的环境"></a>建立安全信任的环境</h4><p><strong>允许试错</strong>：根据情况允许一定程度的错误，让团队成员都能够放心的去试错。明确失败是安全的，团队是为了证伪，而非证明。</p>
+<p><strong>对事不对人</strong>：团队内部的成员也不应该相互抱怨（不对人），而应该努力纠正错误（对事）。</p>
+<p><strong>持续进行</strong>：每个人都明确团队需要持续改进，而不是一步做到最好。</p>
+</li>
+</ol>
+<ol start="2">
+<li><h4 id="明确持续改进的目标"><a href="#明确持续改进的目标" class="headerlink" title="明确持续改进的目标"></a>明确持续改进的目标</h4><p>建立了安全信任的基础，还需要有一个整体的目标，这个目标应当切合DevOps文化，需要根据团队的情况来定制化。制定目标可以遵循四步法，比如：</p>
+<ol>
+<li><p><strong>定义想要做的具体的事情</strong></p>
+<p>如果生产问题频发，那相对应的目标就是减少生产问题，提高代码质量，减少手工测试，快速发布等。</p>
+</li>
+<li><p><strong>定义团队期望的做事方法</strong></p>
+<p>针对想做的事情，提出应对之策，比如：开发团队编写自动化脚本，主动运行自动化测试，进行定期的Code Review等。</p>
+</li>
+<li><p><strong>提供培训，帮助团队完成</strong></p>
+<p>针对这些想做的事，推出培训，比如：团队内部的自动化脚本workshop，或者请外部咨询师来提供相应培训。</p>
+</li>
+<li><p><strong>鼓励机制来促进完成</strong></p>
+<p>衡量能力建设的成果，针对测试的能力建设来说，比如建立测试认证机制，对团队测试成熟度进行评价；或者建立自动化测试组合教练组，帮助团队提高。</p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="3">
+<li><h4 id="明确行动原则"><a href="#明确行动原则" class="headerlink" title="明确行动原则"></a>明确行动原则</h4><p>为了能够建立安全信任的环境，并实现制定的持续改进的目标，势必需要全体成员进行落地行动，需要明确这些行动的指导原则：</p>
+<ol>
+<li><p><strong>价值导向</strong></p>
+<p>以能够为最终用户创造价值为导向，没有创造这部分价值的就不应该去做。</p>
+</li>
+<li><p><strong>快速验证</strong></p>
+<p>倾向于较快地发布，尽快把功能带给用户，也可以尽早验证。</p>
+</li>
+<li><p><strong>持续学习</strong></p>
+<p>定期回顾，事件复盘。</p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="4">
+<li><h4 id="明确度量原则"><a href="#明确度量原则" class="headerlink" title="明确度量原则"></a>明确度量原则</h4><p>文化变革中尤为重要的一点便是如何量化变革的效果。这需要在一开始便确定清楚。如果难以度量成果，那变革将难以维系。团队需要制定出符合自己的度量指标。</p>
+<p>度量指标可以分为4类</p>
+<ol>
+<li><p><strong>引领性度量</strong></p>
+<p>团队成员可以影响的。</p>
+</li>
+<li><p><strong>滞后性度量</strong></p>
+<p>通过滞后的反馈来获取。</p>
+</li>
+<li><p><strong>可观测性度量</strong></p>
+<p>比如发布频率，发布周期，MTBF（平均故障时间），MTTR（平均修复时间）。</p>
+</li>
+<li><p><strong>可行动性度量</strong></p>
+<p>千行代码缺陷率，代码圈复杂度，重复度。</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="实践二：架构设计"><a href="#实践二：架构设计" class="headerlink" title="实践二：架构设计"></a>实践二：架构设计</h3><p>DevOps的一个目的之一是解决软件工程中的第一次上线之后的运行维护，而一个臃肿的架构设计，势必会严重影响上线后的运行维护。毕竟如果对软件进行迭代满足新需求，修复已有Bug，或者进行系统增强满足更高要求的非功能性和安全需求，都需要基于当前架构进行代码修改，进而构建和发布。架构设计不够好，往往便会导致生产事故频发，为了修复一个问题却又引出更多问题。因此，为了保证DevOps实践的顺利开展，架构设计是基础。</p>
+<p>如何进行架构设计才能更好的支持DevOps实践呢？</p>
+<p>首先是架构设计的原则：</p>
+<ol>
+<li><p>满足持续交付（DevOps的重要实践之一）的架构要求</p>
+<ol>
+<li><p>为了测试而设计</p>
+<p>缩短验证时间，加快变更速度</p>
+</li>
+<li><p>为了部署而设计</p>
+<p>缩短部署时间和复杂度，加快部署速度，增强部署效率</p>
+</li>
+<li><p>为了监控而设计</p>
+<p>增加获取反馈的渠道，而不是被动的等待用户反馈</p>
+</li>
+<li><p>为了扩展(Extensibility and Scalibility)而设计</p>
+<p>支持团队人员扩展，支持自身系统扩展</p>
+</li>
+<li><p>为了失效而设计</p>
+<p>快速的部署和发布失败后，如何快速的恢复</p>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li><p>系统拆分原则</p>
+<ol>
+<li>组件业务职责单一清晰</li>
+<li>组件完成功能时，需要的依赖尽可能少（高内聚，低耦合）</li>
+<li>易于构建和测试</li>
+</ol>
+</li>
+</ol>
+<p>如今存在多种被广泛使用的架构风格，无论哪一种架构风格，都应当尽可能的满足这些架构设计原则，才能更好支持DevOps实践。下面也针对不同的场景介绍一些架构风格。</p>
+<ol>
+<li><p>针对客户端软件的<strong>微核架构</strong></p>
+<p>也被称为<strong>插件架构</strong>。该架构的核心功能被单独开发成为微核，所有业务功能通过插件方式实现。插件间的通信只通过核心框架进行。核心部分相对于软件整体来说是很小的，所以形象地被称为<strong>微核架构</strong>。</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gpm0p9b0ufj30hc0dc0sx.jpg" alt="image-20210410161504445"></p>
+<p>微核架构满足了多个DevOps实践的架构设计原则：</p>
+<ol>
+<li><p>易测试</p>
+<p>由于各个组件拆分为一个个的插件，测试也被分开，对于一部分功能的修改，测试难度相较于整体一起进行测试大大降低。</p>
+</li>
+<li><p>易部署发布</p>
+<p>各个负责不同功能的插件都可以独立加载和卸载，可以很容易的发布新功能，或者卸载新功能。</p>
+</li>
+<li><p>易延展(Extensibility)</p>
+<p>通过开发插件来扩展功能，方便快捷。</p>
+</li>
+<li><p>组件职责单一清晰</p>
+<p>核心组件负责处理软件启动，通信基础模块，界面渲染等基础功能，不同功能由不同的插件来完成，组件职责单一且清晰。</p>
+</li>
+<li><p>组件间依赖少</p>
+<p>插件（组件）都是通过核心组件作为唯一的连接点，插件间没有依赖。</p>
+</li>
+</ol>
+<p>由于微核架构的核心组件通常是一个独立单元，无法进行横向扩展（增加核心组件数量），因此这种方式也会更适合用于客户端软件这种不需要横向扩展的场景。</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>针对企业服务端软件的<strong>微服务架构</strong></p>
+<p>提倡将单一程序拆分为一组小的服务，各个服务间相互配合，完成之前由同一个程序完成的任务。</p>
+<p>微服务架构同样也满足了DevOps实践的多个架构设计原则：</p>
+<ol>
+<li><p>易测试</p>
+<p>修改一个服务，仅需要测试这一个服务。</p>
+</li>
+<li><p>易部署</p>
+<p>每个服务可以单独部署，即使程序规模变大，部署难度也不会变得更大。</p>
+</li>
+<li><p>易扩展(Extensible and Scalibility)</p>
+<p>扩展新功能可以基于任何一个服务进行，因而每个服务被拆分后都相对较小，因此易于扩展新功能，另外创建新的服务也很容易。</p>
+<p>无论是纵向扩展（改变单一节点的性能），还是横向扩展（扩展更多的节点），每个服务都可以单独进行扩展，相比单个程序的模式更加容易扩展。</p>
+</li>
+<li><p>易于构建和测试</p>
+<p>每个服务规模都被控制在一定范围内，相对于大规模的软件，更容易构建和测试</p>
+</li>
+</ol>
+<p>微服务的模式也会由于服务被拆分开来，服务的数量会越来越多，1）服务间的相互依赖，网络通信都会越来越复杂，难以处理；2）业务流程中的原子操作也变得更加复杂；3）跨服务的测试和开发都因为需要同时部署和启动多个服务而变得困难；4）公共类库的审计管理也会根据微服务的数量而对应的增加。</p>
+</li>
+</ol>
+<ol start="3">
+<li><p>针对初创公司产品项目的<strong>单体架构</strong></p>
+<p>单体架构最大的优势就是在规模较小时。</p>
+<ol>
+<li><p>易于部署</p>
+<p>由于整个程序仅有一个服务，部署一次就可以完成，因此部署逻辑通常非常简单。</p>
+</li>
+<li><p>易于扩展</p>
+<p>程序可以很容易地进行横向和纵向的扩展。并且在规模较小时可以简单快速地开发新功能。</p>
+</li>
+<li><p>易于构建和测试</p>
+<p>所有组件都融合在一起，无论在本地还是在CI工具上都可以很方便地构建。</p>
+<p>测试也是同样的道理</p>
+</li>
+</ol>
+<p>如果在规模逐渐扩大的情况下，缺点就会立即展现出来。</p>
+<ol>
+<li><p>大规模不易延展</p>
+<p>由于所有服务耦合在一起，耦合的服务足够多的时候，不太容易延展新的功能。</p>
+</li>
+<li><p>大规模不易部署</p>
+<p>任意的服务修改，都需要重新部署整个应用。</p>
+</li>
+</ol>
+<p>因此这种架构设计，要想更好的进行DevOps实践，需要尽量将软件规模维持在一个较小的体量，否则则需要投入大量精力才能较好地落地DevOps实践。</p>
+</li>
+</ol>
+<h3 id="实践三：部署流水线"><a href="#实践三：部署流水线" class="headerlink" title="实践三：部署流水线"></a>实践三：部署流水线</h3><p>部署流水线承包了从源码到部署发布的过程，算得上是DevOps实践的核心部分。想要快速稳定地发布新功能，部署流水线的性能必须得好。那如何能够又快又稳地完成这个过程呢？</p>
+<h4 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h4><ol>
+<li><p>一次构建，多环境部署</p>
+<p>保证各个环境部署的软件是一致的，这样在低环境的各种验证结果更有保障，降低高环境与低环境出现不一致的可能性。</p>
+</li>
+<li><p>与业务逻辑松耦合</p>
+<p>不要将构建和部署相关的内容存放在部署流水线中，而应该存放到业务代码库中。部署流水线中如果包含了业务逻辑，那业务的修改可能会需要通过修改部署流水线来实现，这会极大的增加部署流水线的管理难度。</p>
+</li>
+<li><p>并行化</p>
+<p>并行化可以很大程度提高部署流水线的执行速度。部署流水线的执行速度对于整个部署流水线尤为重要，如果我们可以为每次提交都进行构建和对应的测试，那主分支的代码质量将得到极大的保障，进而保证主分支长期随时可部署。</p>
+</li>
+<li><p>快速反馈</p>
+<p>由于资源有限，部署流水线执行速度也有限，因此需要将那些优先级更高的任务放到流水线的前期，以便更早地进行反馈。帮助团队实现更快地迭代。</p>
+</li>
+<li><p>重要反馈</p>
+<p>部署流水线任务的执行优先级，不能仅仅考虑执行速度，重要程度也必须考虑。</p>
+</li>
+</ol>
+<h4 id="实践原则"><a href="#实践原则" class="headerlink" title="实践原则"></a>实践原则</h4><ol>
+<li><p>产出物管理</p>
+<p>对每次构建的产出物进行管理，便于随时对历史构建版本进行部署，便捷地为测试和审计提供支持。</p>
+</li>
+<li><p>产出物和配置分离</p>
+<p>实现一次构建，多环境部署的必要条件。</p>
+</li>
+<li><p>自动化测试和部署</p>
+<p>部署流水线保证质量的关键因素，同时减少团队测试压力，快速反馈。</p>
+</li>
+<li><p>部署流水线的持续演进</p>
+<p>持续的根据自身需求进行改进，探索符合团队的部署流水线。</p>
+</li>
+<li><p>制定开发规范，所有开发人员遵循该规范</p>
+<p>规范比如是，</p>
+<ol>
+<li>遵循六部提交法</li>
+<li>频繁提交</li>
+<li>小步提交</li>
+<li>提交完整代码</li>
+<li>TDD（Test Driven Development，测试驱动开发）</li>
+</ol>
+</li>
+<li><p>次级构建</p>
+<p>在有性能瓶颈时，可以通过次级构建来提升流水线性能，保证反馈速度。</p>
+</li>
+</ol>
+<h3 id="实践四：分支策略"><a href="#实践四：分支策略" class="headerlink" title="实践四：分支策略"></a>实践四：分支策略</h3><p>分支策略对于开发，构建和部署的影响尤其深远，一个好的分支可以让整个软件生命周期运转顺畅，相反则会严重的阻碍项目进展，甚至导致交付失败。分支策略选择不恰当，往往会导致分支管理混乱，最终导致团队消耗大量精力在分支管理上，甚至某些分支因为无法进行合并而不得不放弃。</p>
+<h4 id="分支策略选择的三个影响因素"><a href="#分支策略选择的三个影响因素" class="headerlink" title="分支策略选择的三个影响因素"></a>分支策略选择的三个影响因素</h4><p>然而分支策略的选择也并不容易。不同团队，不同项目，分支策略不尽相同。甚至同一个团队，同一个项目，在不同时期也可能选择不同的分支策略。如何选择适合DevOps实践落地的分支策略？主要需要关注3个点。</p>
+<ol>
+<li><p>发布频率（时间）</p>
+<p>DevOps强调快速发布，更快地把新特性带给用户。当然这里的快是相对于同类型产品来说，不同类型产品对于发布频率有各自的考量。比如互联网产品，需要非常快速的迭代。但传统行业如机械控制软件，强调稳定，发布频率必然会低上不少。当然发布频率更快也意味着发布时间更容易掌控，这对于软件开发也尤为重要。</p>
+</li>
+<li><p>每次发布的特性数量（特性）</p>
+<p>DevOps实践的目的是更快地交付特性，因此每次能够发布多少特性的数量也尤为重要。团队需要对发布频率和每次发布的特性数量进行权衡。</p>
+</li>
+<li><p>如何保证发布质量（质量）</p>
+<p>质量是一切的根本，是软件的基石。DevOps实践在加速团队发布频率和特性数量的时候，也必须要考虑质量。当然，很多DevOps实践就是为了保障质量，比如自动化测试，建立流水线快速反馈等等。</p>
+</li>
+</ol>
+<p>团队需要在以上三个点（发布频率，特性数量，发布质量）中进行权衡。由此选择适合自身的发布策略，从而对应的选择分支策略。</p>
+<h4 id="发布策略"><a href="#发布策略" class="headerlink" title="发布策略"></a>发布策略</h4><ol>
+<li><p>项目制</p>
+<p>三个影响因素中选择了<code>特性数量</code>和<code>发布质量</code>。</p>
+<p>最直接的一种方式，因为满足业务需求是软件的根本目标，因此确定满足业务目标需要的特性数量。其次明确质量要求。而发布频率（时间）则是可以商量的。正是因为如此，这种发布策略很容易被延期，因为特性数量的不断变更，变更进而引出更多的质量问题，最终导致发布延迟。</p>
+<p>通常也会创建一个项目组来攻坚，因此也称为项目制的发布策略。</p>
+</li>
+<li><p>发布火车</p>
+<p>三个影响因素中选择了<code>发布频率</code>和<code>特性数量</code>。</p>
+<p>由于多个团队相互依赖，不得不确定发布频率（时间）。发布频率必须是固定的，否则会造成连锁反应。当然如果发布时的特性无法正常交付，也会导致被依赖方的功能难以上线，同样造成连锁反应。这种发布策略的问题主要在于多个团队之间的沟通，因为依赖较多且复杂，沟通成本会随着团队数量的增加和功能的复杂性不断攀升。</p>
+<p>由于一个个的发布就像火车发车一样，因此称为发布火车。</p>
+</li>
+<li><p>城际快线</p>
+<p>三个影响因素中选择了<code>发布频率</code>和<code>发布质量</code>。</p>
+<p>一到发布窗口便进行发布，不对每次发布的特性数量进行要求，只要满足质量要求，都可以进行发布。这种发布模式强调发布频率，因此每次发布的功能往往比较少，处理依赖也会比较容易。由于快速发布，因此会出现部分没有完成的特性被发布，因此需要通过feature toggle或者其他手段对这部分代码进行处理。</p>
+<p>每次发布窗口就像城际列车一样，要搭乘哪一列由乘客（团队）自己决定，搭乘则意味着特性会一同发布。因此这种发布策略被称为城际快线。</p>
+</li>
+</ol>
+<h4 id="分支策略"><a href="#分支策略" class="headerlink" title="分支策略"></a>分支策略</h4><p>从实践的角度来看，常见的分支策略有三种，</p>
+<ol>
+<li><p>主干开发，主干发布</p>
+<p>在主干上直接开发，所有开发也都直接提交并Push到主分支，发布也直接从主分支上进行构建和发布。</p>
+<p>长期分支数量最少，因此消耗在管理分支上的支出是最少的，迎合了DevOps的核心思想——精益。</p>
+<p>这种分支策略，常见的分支模型有Trunck Based<sup>[2]</sup>，其中采用这种思想的一个更为出名的叫法是Github Flow<sup>[3]</sup>。</p>
+</li>
+<li><p>主干开发，分支发布</p>
+<p>有时候团队不得不长期维护一个或多个发布分支，所以不得不创建单独的分支进行发布，并由专人进行发布后的维护。</p>
+<p>长期分支数量一定是至少两条，有时候甚至更多。为了处理这些分支，团队不得不花费更多的时间，而且分支越多所需的时间也越长。</p>
+<p>本质上，由于开发还是在主干上，所以分支模型上来说基本还是和<code>主干开发，主干发布</code>没有太多区别。唯一的区别就是需要维护更多的分支，不过由于都是发布分支，并不存在大量的新功能的开发，所以不需要频繁发布。</p>
+</li>
+<li><p>分支开发，主干发布</p>
+<p>为了保证主分支的绝对稳定，或者多个团队需要同时工作在一个产品上。那这种分支模型就可以登场了。</p>
+<p>长期分支的数量也往往比较多，同样会有大量分支管理的投入。如果分支长期不合入主干，那到最后进行合并时，可能会是灾难性的。</p>
+<p>代表性的分支模型便是Git Flow<sup>[4]</sup>了，这种模型的问题也非常明显，就是分支管理非常耗时，甚至无法管理，对此团队需要投入更多精力。</p>
+</li>
+</ol>
+<h3 id="实践五：自动化测试"><a href="#实践五：自动化测试" class="headerlink" title="实践五：自动化测试"></a>实践五：自动化测试</h3><p>DevOps实践中尤为重要的一部分，有多个优势：</p>
+<ol>
+<li><p>减少失误率，提高准确性</p>
+<p>机器执行，弥补人为执行的不确定性。保证零失误。</p>
+</li>
+<li><p>节约时间和成本</p>
+<p>人工测试成本高昂，自动化测试可以替代大部分的人工测试。</p>
+</li>
+<li><p>提升测试覆盖率</p>
+<p>人工测试难以全面覆盖，而自动化测试可以通过编写更多的测试用例，使其覆盖更加全面。</p>
+</li>
+<li><p>弥补手工测试的缺陷</p>
+<p>有些场景手工测试难以覆盖，比如模拟多用户同时登陆。</p>
+</li>
+<li><p>快速反馈</p>
+<p>自动化测试速度比人工测试快很多，便于团队更快拿到变更的反馈。</p>
+</li>
+<li><p>提高团队士气</p>
+<p>每次提交都自动化的运行多个测试，经过完善的自动化测试验证后，往往会让团队更有信心。</p>
+</li>
+</ol>
+<p>实施自动化测试可以遵循测试金字塔，根据不同层级提供不同类型和数量的自动化测试。</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gpobiwmwqbj307o069acd.jpg" alt="image-20210418233309098"></p>
+<p>具体到微服务架构中，测试金字塔可以被具体化为，</p>
+<p><img src="https://tva1.sinaimg.cn/large/008eGmZEgy1gpobkh16wzj30c1081adi.jpg" alt="image-20210418233442226"></p>
+<h3 id="实践六：配置管理"><a href="#实践六：配置管理" class="headerlink" title="实践六：配置管理"></a>实践六：配置管理</h3><p>发布频率提高，整个团队的活力都得到了激发，一个团队需要管理的产品也越来越复杂。因此对于配置的管理就变得越来越复杂，如何有效地对配置进行管理显得尤为重要。</p>
+<p>配置管理包括了软件的方方面面，从软件的需求被定义开始，一直到部署发布。简单来说软件生命周期中的配置包括以下四类：</p>
+<ol>
+<li>需求</li>
+<li>源码</li>
+<li>软件包</li>
+<li>环境配置</li>
+</ol>
+<p>如何管理这些软件配置，需要遵循以下原则：</p>
+<ol>
+<li><p>版本管理</p>
+<p>对所有的配置信息进行版本管理。</p>
+</li>
+<li><p>唯一受信源</p>
+<p>团队对于同一个配置仅有一个受信源，不存在多个。保证任何情况下，所有人获取的都是一样的配置。</p>
+</li>
+<li><p>标准化与自动化</p>
+<p>所有的配置操作（分支策略，源码目录等）都有标准，便于管理和自动化。最终实现自动化的创建基线，管理和记录软件项目的里程碑。</p>
+</li>
+</ol>
+<p>结合配置管理的四类配置，以及原则，可以归纳出下图：</p>
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gprn5x98d3j30wm0ewav9.jpg" alt="image-20210421203140361" style="zoom:50%;" />
+
+
+
+<h3 id="实践七：发布管理"><a href="#实践七：发布管理" class="headerlink" title="实践七：发布管理"></a>实践七：发布管理</h3><p>为了支持更快速地发布，降低发布的风险，可以根据情况采用一些发布方法。</p>
+<ol>
+<li><p>蓝绿部署</p>
+<p>两套环境，验证后进行切换，并且旧环境还可以作为备份，随时进行恢复。</p>
+<p>缺点就是费资源。</p>
+</li>
+<li><p>滚动部署</p>
+<p>逐一地替换掉部署的节点，直到全部替换完成。</p>
+<p>缺点就是无法快速进行恢复。</p>
+</li>
+<li><p>金丝雀发布/灰度发布</p>
+<p>按比例的替换掉节点，根据反馈来逐步提高替换节点的数量。如果反馈较好，则可以继续扩大部署，如果反应不够好，可以及时进行修改，甚至取消发布。</p>
+</li>
+<li><p>暗部署</p>
+<p>在客户不知情的时候，让客户参与部署环境的测试。比如克隆客户的请求，或者直接将客户请求导入到新的处理器上。</p>
+</li>
+</ol>
+<h3 id="实践八：运营支持"><a href="#实践八：运营支持" class="headerlink" title="实践八：运营支持"></a>实践八：运营支持</h3><p>监控可以给运营提供支持，从而反哺业务需求决策，最终形成DevOps实践闭环。</p>
+<p>DevOps实践中，监控可以从三类下手，</p>
+<ol>
+<li><p>资源监测</p>
+</li>
+<li><ol>
+<li>服务器节点的拥堵状态</li>
+<li>CPU负载</li>
+<li>内存及外部存储使用状况</li>
+</ol>
+</li>
+<li><p>应用监测</p>
+</li>
+<li><ol>
+<li>健康检测，是否能正常提供服务</li>
+<li>功能缺陷</li>
+<li>连接数据库是否正常</li>
+<li>是否超时</li>
+<li>抛出异常和告警</li>
+<li>是否及时进行扩容</li>
+<li>…</li>
+</ol>
+</li>
+<li><p>业务监测</p>
+</li>
+<li><ol>
+<li>访问量</li>
+<li>页面浏览数</li>
+<li>转化率</li>
+<li>订单量</li>
+<li>交易额</li>
+</ol>
+</li>
+</ol>
+<p>如何衡量监控的优劣呢？</p>
+<ol>
+<li><p><em>正确性</em></p>
+<p>数据与事实的一致性</p>
+</li>
+<li><p><em>全面性</em></p>
+<p>数据信息是否足以支持团队做出决策</p>
+</li>
+<li><p><em>及时性</em></p>
+<p>数据的发生到能够支持决策所需的处理时间足够短</p>
+</li>
+</ol>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] 乔梁. <em>持续交付2.0-业务引领的DevOps精要</em>. 人民邮电出版社, 2018.</p>
+<p>[2] trunkbaseddevelopment. Trunk Based Development[EB/OL]. <a target="_blank" rel="noopener" href="https://trunkbaseddevelopment.com/">https://trunkbaseddevelopment.com/</a>. 2020-06-25</p>
+<p>[3] Scott Chacon. Github Flow[EB/OL]. <a target="_blank" rel="noopener" href="http://scottchacon.com/2011/08/31/github-flow.html">http://scottchacon.com/2011/08/31/github-flow.html</a>. 2020-06-25</p>
+<p>[4] Vincent Driessen. A successful Git branching model[EB/OL]. <a target="_blank" rel="noopener" href="https://nvie.com/posts/a-successful-git-branching-model/">https://nvie.com/posts/a-successful-git-branching-model/</a>. 2020-06-25</p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Regres</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://notes.wang/2021/04/06/2021-04-06-devops-de-yi-huo-shi-jian-gai-lan/">https://notes.wang/2021/04/06/2021-04-06-devops-de-yi-huo-shi-jian-gai-lan/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Regres</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/software-engineering/">
+                                    <span class="chip bg-color">software engineering</span>
+                                </a>
+                            
+                                <a href="/tags/agile/">
+                                    <span class="chip bg-color">agile</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'CNCdAc25kv9LrKxaBmLs8a0s-gzGzoHsz',
+        appKey: 'z68jAhF522fybYhkWXOP7iLa',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/07/24/2021-07-24-wo-yu-ruan-jian-gong-cheng-de-shi-nian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="我与软件工程的十年">
+                        
+                        <span class="card-title">我与软件工程的十年</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            弹指一挥间，软件工程却已经伴我10年。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/personal/" class="post-category">
+                                    personal
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/retro/">
+                        <span class="chip bg-color">retro</span>
+                    </a>
+                    
+                    <a href="/tags/software-engineering/">
+                        <span class="chip bg-color">software engineering</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/11/14/2020-11-14-git-cang-ku-guan-li-submodule/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Git仓库管理：Submodule">
+                        
+                        <span class="card-title">Git仓库管理：Submodule</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            相互依赖的多个Git仓库如何管理
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-14
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/tool/" class="post-category">
+                                    tool
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 一点雨见<br />'
+            + '文章作者: Regres<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">Regres</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+<!--            -->
+<!--            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span-->
+<!--                class="white-color">43.8k</span>&nbsp;字-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_pv">-->
+<!--                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"-->
+<!--                    class="white-color"></span>&nbsp;次-->
+<!--            </span>-->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_uv">-->
+<!--                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"-->
+<!--                    class="white-color"></span>&nbsp;人-->
+<!--            </span>-->
+<!--            -->
+<!--            <br>-->
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "6";
+                    var startDate = "13";
+                    var startHour = "18";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.miitbeian.gov.cn" target="_blank">渝ICP备18006605号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/regreser" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:colewangyu@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

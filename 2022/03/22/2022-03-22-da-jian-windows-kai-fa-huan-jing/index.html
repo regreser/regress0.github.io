@@ -1,0 +1,1212 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="搭建Windows开发环境, 一点雨见">
+    <meta name="description" content="Electronic Notes of my personal insight">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126136790-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-126136790-1');
+</script>
+
+
+    <title>搭建Windows开发环境 | 一点雨见</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="一点雨见" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">一点雨见</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">一点雨见</div>
+        <div class="logo-desc">
+            
+            Electronic Notes of my personal insight
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">搭建Windows开发环境</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/windows/">
+                                <span class="chip bg-color">windows</span>
+                            </a>
+                        
+                            <a href="/tags/development/">
+                                <span class="chip bg-color">development</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/tool/" class="post-category">
+                                tool
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-03-22
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-15
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    5 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><hr>
+<ol>
+<li>为什么要搭建Windows开发环境</li>
+<li>开发环境需要搭建些什么</li>
+<li>成品展示</li>
+<li>搭建过程<ol>
+<li>安装配置Terminal</li>
+<li>安装配置WSLv2（配置Zsh以及主题powerlevel10k）</li>
+<li>安装配置VSCode</li>
+<li>安装配置IntelliJ</li>
+<li>安装配置Typora</li>
+<li>WSL中的开发语言环境</li>
+</ol>
+</li>
+<li>总结</li>
+</ol>
+<h1 id="01-为什么要搭建Windows开发环境"><a href="#01-为什么要搭建Windows开发环境" class="headerlink" title="01. 为什么要搭建Windows开发环境"></a>01. 为什么要搭建Windows开发环境</h1><hr>
+<p>作为一个互联网程序开发者，往往会基于MacOS来完成日常开发工作。毕竟MacOS有着很多的优势，比如与Linux系统更加接近，系统更加稳定，足够完善便捷的生态，华丽的外表，省心的使用体验…优势一箩筐，那我为什么还要搭建Windows开发环境？原因有几个，</p>
+<ol>
+<li>渴望Windows游戏工作两不误的体验</li>
+<li>现在配置的Windows机器有很好的硬件基础</li>
+<li>期待并想要尝试Windows的UI+Linux的开发体验</li>
+<li>和Macbook互相备份，避免单点失败</li>
+</ol>
+<p>WSL(Windows Subsystem Linux)出现过后，一直想要好好地尝试一下，毕竟Windows上进行基于Linux的开发，这对于一个Windows和Linux的重度使用者，绝对是可以勾起足够多的兴趣的。</p>
+<p>Windows的配置很好，毕竟打游戏得用好的硬件，在开机几秒的Windows上面开发应该会很不错吧。</p>
+<p>开发虽然用惯了MacOS，但是日常的文档工作，比如PPT什么的，还是得用Windows，另外玩游戏，修照片都习惯在Windows上面完成。如果能借助WSL的能力，把开发这部分唯一不在MacOS上完成的活动也迁移到Windows上，那Windows作为一个大而全的平台，就真的是真香了。</p>
+<p>基于此，我决定开始搭建我的Windows开发环境。</p>
+<h1 id="02-开发环境需要搭建些什么"><a href="#02-开发环境需要搭建些什么" class="headerlink" title="02. 开发环境需要搭建些什么"></a>02. 开发环境需要搭建些什么</h1><hr>
+<p>在开始之前，有对于在WSL上搭建开发环境的几个期望</p>
+<ol>
+<li>美观，不能比MacOS差太多</li>
+<li>方便，尽量减少学习成本，切换成本</li>
+<li>简单，容易安装和维护</li>
+<li>功能完备，核心软件必须能够安装，非核心软件可以找到替代品</li>
+</ol>
+<p>简单分析了自己开发环境需要的功能，并基于以上的几个期望，列举了对应的软件，如下图，</p>
+<p><img src="https://s2.loli.net/2022/04/03/XoPtHjS91Ramw45.png" alt="windows开发平台需求分析"></p>
+<p>如上图所示，作为一个程序员，最重要的两个方面</p>
+<ol>
+<li>代码开发</li>
+</ol>
+<p>一部分是作为开发需要的语言环境，以及作为DevOps需要的语言环境</p>
+<ol>
+<li>文本编辑</li>
+</ol>
+<p>主要就是通过博客或其他类似方式产出想法。</p>
+<p>总结来说，在Windows上需要安装的软件主要有，</p>
+<ol>
+<li><p>基础软件</p>
+<ol>
+<li>WSL</li>
+</ol>
+</li>
+<li><p>工具软件</p>
+<ol>
+<li>Terminal</li>
+</ol>
+</li>
+<li><p>IDE</p>
+<ol>
+<li>Intellij</li>
+<li>VSCode</li>
+</ol>
+</li>
+<li><p>Markdown编辑器</p>
+<ol>
+<li>Typora</li>
+</ol>
+</li>
+</ol>
+<p>在WSL环境中需要安装的软件主要有，</p>
+<ol>
+<li><p>工具软件</p>
+<ol>
+<li>ZSH</li>
+<li>oh-my-zsh</li>
+</ol>
+</li>
+<li><p>开发语言环境</p>
+<ol>
+<li>Java</li>
+<li>JavaScript</li>
+<li>Python</li>
+<li>Go</li>
+</ol>
+</li>
+<li><p>DevOps环境</p>
+<ol>
+<li>Docker</li>
+<li>Terraform &amp;      AWS CLI</li>
+<li>Kubernetes</li>
+</ol>
+</li>
+</ol>
+<h1 id="03-成品展示"><a href="#03-成品展示" class="headerlink" title="03. 成品展示"></a>03. 成品展示</h1><hr>
+<h2 id="Windows中的WSL以及Terminal"><a href="#Windows中的WSL以及Terminal" class="headerlink" title="Windows中的WSL以及Terminal"></a>Windows中的WSL以及Terminal</h2><p><img src="https://s2.loli.net/2022/03/29/NmUJOwH6nxEbPgr.png" alt="Terminal示例"></p>
+<p>WSL可以说是给Windows平台的程序开发注入了灵魂。当然必须是WSL2，WSL2相比于WSL1最大的不同在于WSL2是一个轻量级虚拟机，提供部分Linux的内核功能，而WSL1则是分享Windows的内核。这个区别就基本导致了Docker用户必须选择WSL2，因为Docker核心功能的运行就是基于Linux内核的Cgroup和Namespace功能。其他需要依赖Linux内核功能的软件也建议安装WSL2。</p>
+<h3 id="VSCode"><a href="#VSCode" class="headerlink" title="VSCode"></a>VSCode</h3><p><img src="https://s2.loli.net/2022/03/29/S52hD9nowCP6Ej7.png" alt="VSCode示例"></p>
+<p>VSCode支持WSL。</p>
+<h3 id="IntelliJ"><a href="#IntelliJ" class="headerlink" title="IntelliJ"></a>IntelliJ</h3><p><img src="https://s2.loli.net/2022/03/29/xsS7am1pArXNY3Z.png" alt="IntelliJ示例"></p>
+<p>IntelliJ支持WSL。</p>
+<p>通过一个简单的Gradle管理的SpringBoot程序来验证了WSL下的开发体验，除了需要进行一些额外的配置，基本可以达到MacOS下的开发体验了。</p>
+<h1 id="04-搭建过程"><a href="#04-搭建过程" class="headerlink" title="04. 搭建过程"></a>04. 搭建过程</h1><hr>
+<h2 id="安装Terminal"><a href="#安装Terminal" class="headerlink" title="安装Terminal"></a>安装Terminal</h2><p>通过Microsoft Store安装Terminal，参考<a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701">安装教程</a>。</p>
+<p><img src="https://s2.loli.net/2022/03/29/ZAYhEM15IuGKoXd.png" alt="Windows AppStore Terminal"></p>
+<h2 id="安装配置WSL-v2"><a href="#安装配置WSL-v2" class="headerlink" title="安装配置WSL v2"></a>安装配置WSL v2</h2><h3 id="安装WSL"><a href="#安装WSL" class="headerlink" title="安装WSL"></a>安装WSL</h3><p>安装过程参考这个<a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/windows/wsl/install">安装教程</a></p>
+<p>安装WSL</p>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token function">PS</span> C:\Windows\System32> wsl <span class="token operator">--</span>install <span class="token operator">-</span>d Ubuntu<span class="token operator">-</span>20<span class="token punctuation">.</span>04</code></pre>
+<p>查看当前WSL的版本</p>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token function">PS</span> C:\Windows\System32> wsl <span class="token operator">-</span>l <span class="token operator">-</span>v
+  NAME              STATE           VERSION
+<span class="token operator">*</span> Ubuntu20<span class="token punctuation">.</span>04LTS    Running         2</code></pre>
+<p>如果不是WSL v2，可以通过以下命令进行更改</p>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token function">PS</span> C:\Windows\System32> wsl <span class="token operator">--</span><span class="token function">set</span><span class="token operator">-</span>version Ubuntu20<span class="token punctuation">.</span>04LTS 2</code></pre>
+<h3 id="安装配置Zsh"><a href="#安装配置Zsh" class="headerlink" title="安装配置Zsh"></a>安装配置Zsh</h3><p><a target="_blank" rel="noopener" href="https://ohmyz.sh/#install">https://ohmyz.sh/#install</a></p>
+<pre class=" language-shell"><code class="language-shell">$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"</code></pre>
+<h3 id="安装配置主题powerlevel10k"><a href="#安装配置主题powerlevel10k" class="headerlink" title="安装配置主题powerlevel10k"></a>安装配置主题powerlevel10k</h3><p><a target="_blank" rel="noopener" href="https://github.com/romkatv/powerlevel10k#oh-my-zsh">https://github.com/romkatv/powerlevel10k#oh-my-zsh</a></p>
+<p>下载主题</p>
+<pre class=" language-shell"><code class="language-shell">$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $&#123;ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom&#125;/themes/powerlevel10k</code></pre>
+<p>配置主题</p>
+<pre class=" language-shell"><code class="language-shell">$ sudo vim ~/.zshrc</code></pre>
+<p>修改ZSH_THEHE</p>
+<pre class=" language-shell"><code class="language-shell">ZSH_THEME="powerlevel10k/powerlevel10k"</code></pre>
+<p>安装字体，避免乱码。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf">MesloLGS NF Regular.ttf</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf">MesloLGS NF Bold.ttf</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf">MesloLGS NF Italic.ttf</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf">MesloLGS NF Bold Italic.ttf</a></p>
+<h3 id="更换Terminal字体"><a href="#更换Terminal字体" class="headerlink" title="更换Terminal字体"></a>更换Terminal字体</h3><p><img src="https://s2.loli.net/2022/03/29/enNJPmzFrhUGxkR.png" alt="Terminal配置"></p>
+<h2 id="安装配置IntelliJ"><a href="#安装配置IntelliJ" class="headerlink" title="安装配置IntelliJ"></a>安装配置IntelliJ</h2><h3 id="安装IntelliJ"><a href="#安装IntelliJ" class="headerlink" title="安装IntelliJ"></a>安装IntelliJ</h3><p>无明确需求，可以安装免费的Community版本。</p>
+<h3 id="配置WSL"><a href="#配置WSL" class="headerlink" title="配置WSL"></a>配置WSL</h3><p>在IntelliJ中配置WSL参考这个<a target="_blank" rel="noopener" href="https://www.jetbrains.com/help/idea/how-to-use-wsl-development-environment-in-product.html#wsl-terminal">配置教程</a></p>
+<p>IntelliJ的Terminal不需要更换字体是因为IntelliJ的Terminal是内置的Windows Terminal，只要配置好了Windows Terminal就不需要重新配置了。</p>
+<p><img src="https://s2.loli.net/2022/03/29/EwceRfC54tJIBXh.png" alt="IntelliJ配置"></p>
+<h2 id="安装配置VSCode"><a href="#安装配置VSCode" class="headerlink" title="安装配置VSCode"></a>安装配置VSCode</h2><h3 id="安装VSCode"><a href="#安装VSCode" class="headerlink" title="安装VSCode"></a>安装VSCode</h3><p>在官网下载对应版本进行安装即可。</p>
+<h3 id="配置WSL-1"><a href="#配置WSL-1" class="headerlink" title="配置WSL"></a>配置WSL</h3><p>安装<a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack">远程开发扩展包</a>即可。</p>
+<h3 id="更换VSCode-Terminal的字体"><a href="#更换VSCode-Terminal的字体" class="headerlink" title="更换VSCode Terminal的字体"></a>更换VSCode Terminal的字体</h3><p>更换字体是为了防止terminal显示乱码。同样更换为<code>MesloLGS NF</code></p>
+<p><img src="https://s2.loli.net/2023/04/15/hNISgQiVfsGBEyR.png" alt="VSCode配置"></p>
+<h2 id="安装配置Typora"><a href="#安装配置Typora" class="headerlink" title="安装配置Typora"></a>安装配置Typora</h2><p>一直使用Typora，很好的Markdown编辑器。Typora正式版发布后，也正式开始收费了，当然也可以继续使用免费的0.9.x版本。不升级的方式短暂使用没有问题，但是长期来看，还是需要来获得新功能已经安全漏洞和bug的修复，或者尽快找到替代品。</p>
+<h2 id="WSL中配置语言环境"><a href="#WSL中配置语言环境" class="headerlink" title="WSL中配置语言环境"></a>WSL中配置语言环境</h2><p>有了上文配置过后的Terminal，就可以基于WSL2的Ubuntu进行各种开发语言环境的搭建了。这里就不一一列举。举个简单的例子，安装JDK11可以使用如下命令： </p>
+<pre class=" language-shell"><code class="language-shell">$ sudo apt-get install openjdk-11-jdk</code></pre>
+<h1 id="05-总结"><a href="#05-总结" class="headerlink" title="05. 总结"></a>05. 总结</h1><hr>
+<p>一番短暂地体验之后，发现在WSL2上的开发体验其实和MacOS并没有太多差别。一方面Windows的可视化界面一直以来也没有什么问题，再加上Linux的文字接口用起来和MacOS虽有不同，但大致是一样的。而通过这一波操作，我的Windows电脑更加全能了，甚至还比MacOS更接近服务部署的Linux。我的这些游戏机和Office编辑机们恐怕没有想到过自己有一天竟然会成为一台主力开发机吧。</p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Regres</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://notes.wang/2022/03/22/2022-03-22-da-jian-windows-kai-fa-huan-jing/">https://notes.wang/2022/03/22/2022-03-22-da-jian-windows-kai-fa-huan-jing/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Regres</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/windows/">
+                                    <span class="chip bg-color">windows</span>
+                                </a>
+                            
+                                <a href="/tags/development/">
+                                    <span class="chip bg-color">development</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'CNCdAc25kv9LrKxaBmLs8a0s-gzGzoHsz',
+        appKey: 'z68jAhF522fybYhkWXOP7iLa',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/04/09/2022-04-09-chao-di-li-lu-de-fen-qi-dai-kuan-neng-dai-ma/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="超低利率的分期贷款能贷吗？">
+                        
+                        <span class="card-title">超低利率的分期贷款能贷吗？</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            看起来利率很低很划算的银行分期贷款，可能并没有看起来那么划算。
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-09
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/life/" class="post-category">
+                                    life
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/loan/">
+                        <span class="chip bg-color">loan</span>
+                    </a>
+                    
+                    <a href="/tags/finance/">
+                        <span class="chip bg-color">finance</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/22/2022-03-22-wo-xuan-ze-macos-zuo-wei-kai-fa-zhu-li-ji-de-li-you/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="我选择MacOS作为开发主力机的理由">
+                        
+                        <span class="card-title">我选择MacOS作为开发主力机的理由</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            作为一个互联网程序开发者，往往会基于MacOS来完成日常开发工作。可能的原因有很多...
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/tool/" class="post-category">
+                                    tool
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/macos/">
+                        <span class="chip bg-color">macos</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 一点雨见<br />'
+            + '文章作者: Regres<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">Regres</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+<!--            -->
+<!--            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span-->
+<!--                class="white-color">43.8k</span>&nbsp;字-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_pv">-->
+<!--                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"-->
+<!--                    class="white-color"></span>&nbsp;次-->
+<!--            </span>-->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_uv">-->
+<!--                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"-->
+<!--                    class="white-color"></span>&nbsp;人-->
+<!--            </span>-->
+<!--            -->
+<!--            <br>-->
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "6";
+                    var startDate = "13";
+                    var startHour = "18";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.miitbeian.gov.cn" target="_blank">渝ICP备18006605号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/regreser" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:colewangyu@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

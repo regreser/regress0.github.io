@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>一点雨见</title>
+  
+  <subtitle>Little Insight</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://notes.wang/"/>
+  <updated>2023-04-15T14:12:27.447Z</updated>
+  <id>https://notes.wang/</id>
+  
+  <author>
+    <name>Regres</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>签名你的Git提交</title>
+    <link href="https://notes.wang/2022/12/11/2022-12-11-qian-ming-ni-de-git-ti-jiao/"/>
+    <id>https://notes.wang/2022/12/11/2022-12-11-qian-ming-ni-de-git-ti-jiao/</id>
+    <published>2022-12-11T14:16:11.000Z</published>
+    <updated>2023-04-15T14:12:27.447Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+    
+    
+      <category term="git" scheme="https://notes.wang/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何有效地学习</title>
+    <link href="https://notes.wang/2022/08/11/2022-08-11-you-xiao-de-xue-xi/"/>
+    <id>https://notes.wang/2022/08/11/2022-08-11-you-xiao-de-xue-xi/</id>
+    <published>2022-08-11T11:38:12.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;0-目录&quot;&gt;&lt;a href=&quot;#0-目录&quot; class=&quot;headerlink&quot; title=&quot;0. 目录&quot;&gt;&lt;/a&gt;0.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="efficiency" scheme="https://notes.wang/categories/efficiency/"/>
+    
+    
+      <category term="learn" scheme="https://notes.wang/tags/learn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>超低利率的分期贷款能贷吗？</title>
+    <link href="https://notes.wang/2022/04/09/2022-04-09-chao-di-li-lu-de-fen-qi-dai-kuan-neng-dai-ma/"/>
+    <id>https://notes.wang/2022/04/09/2022-04-09-chao-di-li-lu-de-fen-qi-dai-kuan-neng-dai-ma/</id>
+    <published>2022-04-09T03:38:12.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="life" scheme="https://notes.wang/categories/life/"/>
+    
+    
+      <category term="loan" scheme="https://notes.wang/tags/loan/"/>
+    
+      <category term="finance" scheme="https://notes.wang/tags/finance/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建Windows开发环境</title>
+    <link href="https://notes.wang/2022/03/22/2022-03-22-da-jian-windows-kai-fa-huan-jing/"/>
+    <id>https://notes.wang/2022/03/22/2022-03-22-da-jian-windows-kai-fa-huan-jing/</id>
+    <published>2022-03-22T15:48:04.000Z</published>
+    <updated>2023-04-15T14:39:49.277Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tool" scheme="https://notes.wang/categories/tool/"/>
+    
+    
+      <category term="windows" scheme="https://notes.wang/tags/windows/"/>
+    
+      <category term="development" scheme="https://notes.wang/tags/development/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我选择MacOS作为开发主力机的理由</title>
+    <link href="https://notes.wang/2022/03/22/2022-03-22-wo-xuan-ze-macos-zuo-wei-kai-fa-zhu-li-ji-de-li-you/"/>
+    <id>https://notes.wang/2022/03/22/2022-03-22-wo-xuan-ze-macos-zuo-wei-kai-fa-zhu-li-ji-de-li-you/</id>
+    <published>2022-03-22T14:48:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tool" scheme="https://notes.wang/categories/tool/"/>
+    
+    
+      <category term="macos" scheme="https://notes.wang/tags/macos/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的人生管理</title>
+    <link href="https://notes.wang/2022/03/06/2022-03-06-wo-de-ren-sheng-guan-li/"/>
+    <id>https://notes.wang/2022/03/06/2022-03-06-wo-de-ren-sheng-guan-li/</id>
+    <published>2022-03-06T14:38:12.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="life" scheme="https://notes.wang/categories/life/"/>
+    
+    
+      <category term="management" scheme="https://notes.wang/tags/management/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我与软件工程的十年</title>
+    <link href="https://notes.wang/2021/07/24/2021-07-24-wo-yu-ruan-jian-gong-cheng-de-shi-nian/"/>
+    <id>https://notes.wang/2021/07/24/2021-07-24-wo-yu-ruan-jian-gong-cheng-de-shi-nian/</id>
+    <published>2021-07-24T14:48:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="personal" scheme="https://notes.wang/categories/personal/"/>
+    
+    
+      <category term="retro" scheme="https://notes.wang/tags/retro/"/>
+    
+      <category term="software engineering" scheme="https://notes.wang/tags/software-engineering/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DevOps的疑惑-实践概览</title>
+    <link href="https://notes.wang/2021/04/06/2021-04-06-devops-de-yi-huo-shi-jian-gai-lan/"/>
+    <id>https://notes.wang/2021/04/06/2021-04-06-devops-de-yi-huo-shi-jian-gai-lan/</id>
+    <published>2021-04-06T14:48:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;DevOps前世今生&quot;&gt;&lt;a href=&quot;#DevOps前世今生&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+    
+    
+      <category term="software engineering" scheme="https://notes.wang/tags/software-engineering/"/>
+    
+      <category term="agile" scheme="https://notes.wang/tags/agile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git仓库管理：Submodule</title>
+    <link href="https://notes.wang/2020/11/14/2020-11-14-git-cang-ku-guan-li-submodule/"/>
+    <id>https://notes.wang/2020/11/14/2020-11-14-git-cang-ku-guan-li-submodule/</id>
+    <published>2020-11-14T14:48:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h1&gt;&lt;h3 id=&quot;场景一&quot;&gt;&lt;a href=&quot;#场景一&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tool" scheme="https://notes.wang/categories/tool/"/>
+    
+    
+      <category term="git" scheme="https://notes.wang/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分支模型：概览</title>
+    <link href="https://notes.wang/2020/06/27/2020-06-27-branch-model-overview/"/>
+    <id>https://notes.wang/2020/06/27/2020-06-27-branch-model-overview/</id>
+    <published>2020-06-27T15:48:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-版本管理工具&quot;&gt;&lt;a href=&quot;#1-版本管理工具&quot; class=&quot;headerlink&quot; title=&quot;1. 版本管理工具&quot;&gt;&lt;/a&gt;1. 版本管理工具&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;工欲善其事，必先利其器。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+    
+    
+      <category term="branch model" scheme="https://notes.wang/tags/branch-model/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AWS Certification - Solutions Architect Professional</title>
+    <link href="https://notes.wang/2020/06/19/2020-06-19-aws-solution-architect-professional/"/>
+    <id>https://notes.wang/2020/06/19/2020-06-19-aws-solution-architect-professional/</id>
+    <published>2020-06-19T15:50:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-AWS-Certification介绍&quot;&gt;&lt;a href=&quot;#1-AWS-Certification介绍&quot; class=&quot;headerlink&quot; title=&quot;1. AWS Certification介绍&quot;&gt;&lt;/a&gt;1. AWS
+        
+      
+    
+    </summary>
+    
+    
+      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+    
+    
+      <category term="aws" scheme="https://notes.wang/tags/aws/"/>
+    
+      <category term="cert" scheme="https://notes.wang/tags/cert/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AWS Lambda CICD</title>
+    <link href="https://notes.wang/2019/09/22/2019-09-22-aws-lambda-cicd/"/>
+    <id>https://notes.wang/2019/09/22/2019-09-22-aws-lambda-cicd/</id>
+    <published>2019-09-22T15:40:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Serverless简介&quot;&gt;&lt;a href=&quot;#Serverless简介&quot; class=&quot;headerlink&quot; title=&quot;Serverless简介&quot;&gt;&lt;/a&gt;Serverless简介&lt;/h2&gt;&lt;p&gt;AWS
+        
+      
+    
+    </summary>
+    
+    
+      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+    
+    
+      <category term="aws" scheme="https://notes.wang/tags/aws/"/>
+    
+      <category term="lambda" scheme="https://notes.wang/tags/lambda/"/>
+    
+      <category term="cicd" scheme="https://notes.wang/tags/cicd/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>观察者模式</title>
+    <link href="https://notes.wang/2018/03/20/2018-03-20-guan-cha-zhe-mo-shi/"/>
+    <id>https://notes.wang/2018/03/20/2018-03-20-guan-cha-zhe-mo-shi/</id>
+    <published>2018-03-20T15:25:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;What-观察者模式的概念？&quot;&gt;&lt;a href=&quot;#What-观察者模式的概念？&quot; class=&quot;headerlink&quot; title=&quot;What 观察者模式的概念？&quot;&gt;&lt;/a&gt;&lt;code&gt;What&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+    
+    
+      <category term="design pattern" scheme="https://notes.wang/tags/design-pattern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RESTful API设计概览</title>
+    <link href="https://notes.wang/2018/02/18/2018-02-18-restful-api-she-ji-gai-lan/"/>
+    <id>https://notes.wang/2018/02/18/2018-02-18-restful-api-she-ji-gai-lan/</id>
+    <published>2018-02-18T12:25:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;What-什么是RESTful-API设计？&quot;&gt;&lt;a href=&quot;#What-什么是RESTful-API设计？&quot; class=&quot;headerlink&quot; title=&quot;What 什么是RESTful API设计？&quot;&gt;&lt;/a&gt;&lt;code&gt;What&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+    
+    
+      <category term="api" scheme="https://notes.wang/tags/api/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSRF基础与实践</title>
+    <link href="https://notes.wang/2017/12/16/2017-12-16-csrf-ji-chu-yu-shi-jian/"/>
+    <id>https://notes.wang/2017/12/16/2017-12-16-csrf-ji-chu-yu-shi-jian/</id>
+    <published>2017-12-16T11:25:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;What-什么是CSRF？&quot;&gt;&lt;a href=&quot;#What-什么是CSRF？&quot; class=&quot;headerlink&quot; title=&quot;What 什么是CSRF？&quot;&gt;&lt;/a&gt;&lt;code&gt;What&lt;/code&gt; 什么是CSRF？&lt;/h2&gt;&lt;p&gt;CSRF（Cross
+        
+      
+    
+    </summary>
+    
+    
+      <category term="security" scheme="https://notes.wang/categories/security/"/>
+    
+    
+      <category term="csrf" scheme="https://notes.wang/tags/csrf/"/>
+    
+      <category term="web" scheme="https://notes.wang/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>当你在浏览器输入URL并回车发生了什么</title>
+    <link href="https://notes.wang/2017/12/10/2017-12-10-dang-ni-zai-liu-lan-qi-shu-ru-url-bing-hui-che-fa-sheng-liao-shi-me/"/>
+    <id>https://notes.wang/2017/12/10/2017-12-10-dang-ni-zai-liu-lan-qi-shu-ru-url-bing-hui-che-fa-sheng-liao-shi-me/</id>
+    <published>2017-12-10T12:31:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="computer fundation" scheme="https://notes.wang/categories/computer-fundation/"/>
+    
+    
+      <category term="os" scheme="https://notes.wang/tags/os/"/>
+    
+      <category term="browser" scheme="https://notes.wang/tags/browser/"/>
+    
+      <category term="dns" scheme="https://notes.wang/tags/dns/"/>
+    
+      <category term="arp" scheme="https://notes.wang/tags/arp/"/>
+    
+      <category term="tcp" scheme="https://notes.wang/tags/tcp/"/>
+    
+      <category term="http" scheme="https://notes.wang/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>API的不同架构风格概述</title>
+    <link href="https://notes.wang/2017/11/27/2017-11-27-api-de-bu-tong-jia-gou-feng-ge-gai-shu/"/>
+    <id>https://notes.wang/2017/11/27/2017-11-27-api-de-bu-tong-jia-gou-feng-ge-gai-shu/</id>
+    <published>2017-11-27T13:25:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;定义-API的基本概念？&quot;&gt;&lt;a href=&quot;#定义-API的基本概念？&quot; class=&quot;headerlink&quot; title=&quot;定义 API的基本概念？&quot;&gt;&lt;/a&gt;&lt;code&gt;定义&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+    
+    
+      <category term="api" scheme="https://notes.wang/tags/api/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定制化Spring-Security</title>
+    <link href="https://notes.wang/2017/11/06/2017-11-06-ding-zhi-hua-spring-security/"/>
+    <id>https://notes.wang/2017/11/06/2017-11-06-ding-zhi-hua-spring-security/</id>
+    <published>2017-11-06T14:05:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;定义-什么是Spring-Security？&quot;&gt;&lt;a href=&quot;#定义-什么是Spring-Security？&quot; class=&quot;headerlink&quot; title=&quot;定义 什么是Spring Security？&quot;&gt;&lt;/a&gt;&lt;code&gt;定义&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+    
+    
+      <category term="spring" scheme="https://notes.wang/tags/spring/"/>
+    
+      <category term="auth" scheme="https://notes.wang/tags/auth/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ansible概览</title>
+    <link href="https://notes.wang/2017/11/02/2017-11-02-ansible-gai-lan/"/>
+    <id>https://notes.wang/2017/11/02/2017-11-02-ansible-gai-lan/</id>
+    <published>2017-11-02T10:25:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;What-什么是Ansible？&quot;&gt;&lt;a href=&quot;#What-什么是Ansible？&quot; class=&quot;headerlink&quot; title=&quot;What 什么是Ansible？&quot;&gt;&lt;/a&gt;&lt;code&gt;What&lt;/code&gt; 什么是Ansible？&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+    
+    
+      <category term="ansible" scheme="https://notes.wang/tags/ansible/"/>
+    
+      <category term="configuration management" scheme="https://notes.wang/tags/configuration-management/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免费好用的Blog - Github Pages</title>
+    <link href="https://notes.wang/2017/11/01/2017-11-01-mian-fei-hao-yong-de-blog-github-pages/"/>
+    <id>https://notes.wang/2017/11/01/2017-11-01-mian-fei-hao-yong-de-blog-github-pages/</id>
+    <published>2017-11-01T10:25:00.000Z</published>
+    <updated>2023-04-15T14:09:57.407Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;What-什么是github-pages？&quot;&gt;&lt;a href=&quot;#What-什么是github-pages？&quot; class=&quot;headerlink&quot; title=&quot;What 什么是github pages？&quot;&gt;&lt;/a&gt;&lt;code&gt;What&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="tool" scheme="https://notes.wang/categories/tool/"/>
+    
+    
+      <category term="blog" scheme="https://notes.wang/tags/blog/"/>
+    
+      <category term="github" scheme="https://notes.wang/tags/github/"/>
+    
+      <category term="hexo" scheme="https://notes.wang/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>

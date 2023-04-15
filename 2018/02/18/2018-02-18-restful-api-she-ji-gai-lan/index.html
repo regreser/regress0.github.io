@@ -1,0 +1,1171 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="RESTful API设计概览, 一点雨见">
+    <meta name="description" content="Electronic Notes of my personal insight">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126136790-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-126136790-1');
+</script>
+
+
+    <title>RESTful API设计概览 | 一点雨见</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="一点雨见" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">一点雨见</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">一点雨见</div>
+        <div class="logo-desc">
+            
+            Electronic Notes of my personal insight
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/restful-api.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">RESTful API设计概览</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/api/">
+                                <span class="chip bg-color">api</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/dev/" class="post-category">
+                                dev
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2018-02-18
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-15
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    8 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="What-什么是RESTful-API设计？"><a href="#What-什么是RESTful-API设计？" class="headerlink" title="What 什么是RESTful API设计？"></a><code>What</code> 什么是RESTful API设计？</h2><p>在REST中，所有的数据都以资源的形式存在。针对资源提供一系列操作接口被称为RESTful API。<br>所有的RESTful API都是对资源的操作。因此，在搞清楚RESTful API设计前，得先搞清楚什么是资源。</p>
+<h3 id="什么是资源"><a href="#什么是资源" class="headerlink" title="什么是资源"></a>什么是资源</h3><p>一个资源可以是一个简单的对象，也可以是对象的集合。<br>比如customers是一个对象的集合，集合中包含了多个customer，而这里的customer则是一个简单的对象。</p>
+<p>一个资源中也可能包含其他资源。比如customer资源中，可能还包含accounts资源。<br>accounts中又包含多个account资源。</p>
+<h3 id="什么是RESTful-API命名"><a href="#什么是RESTful-API命名" class="headerlink" title="什么是RESTful API命名"></a>什么是RESTful API命名</h3><p>那针对这些定义的资源，RESTful API使用URI（Uniform Resource Identifiers，统一资源定位符）来定位资源。<br>这些我们定义地URI就是RESTful API的命名。具体来说，针对上文中提到的customer和account两个资源。<br>我们可以为获取customer资源提供一下API：</p>
+<pre><code>/customers/&#123;customerId&#125;</code></pre><p>以此通过传入一个customerId来获取该customer的信息。</p>
+<p>对于嵌套存在于customer资源中的account资源，可以通过如下URI来获取：</p>
+<pre><code>/customers/&#123;customerId&#125;/accounts/&#123;accountId&#125;</code></pre><p>通过提供customerId和accountId来得到对应customer资源下的account资源。</p>
+<p>以上举例的两个URI便是RESTful API的命名，但不限于此。<br>获取同样的资源可以有很多不同的方式，事实上也可以使用如下方式来获取资源。</p>
+<pre><code>/customers/&#123;customerId&#125;?accountId=&#123;accountId&#125;</code></pre><p>这样的URI也可以获取到指定customer资源中的指定account资源。<br>但这样的命名规则与前一种相比就显得没有那么简单规范了。<br>因为既使用了Route，也是用了Parameter来传递查询参数。<br>让人摸不透什么时候应该使用Route，什么时候应该使用Parameter。</p>
+<h2 id="Why-为什么需要RESTful-API命名？"><a href="#Why-为什么需要RESTful-API命名？" class="headerlink" title="Why 为什么需要RESTful API命名？"></a><code>Why</code> 为什么需要RESTful API命名？</h2><p>一个完整统一的针对RESTful资源的命名，就好比在应用中使用了更好设计模式，提供给我们更好地可维护性。<br>针对以后的需求变更，可以更加从容地应对。<br>比如在有新的资源加入时，直接使用同样的命名规则来命名新的API即可实现扩展。</p>
+<p>另外，清晰地命名，也会使得这些API能够被容易地使用和理解。<br>只要知道了如何操作customer，如何操作account，以后出现新的资源，也就自然而然地知道了如何操作新的资源。</p>
+<h2 id="How-RESTful-API命名最佳实践"><a href="#How-RESTful-API命名最佳实践" class="headerlink" title="How RESTful API命名最佳实践"></a><code>How</code> RESTful API命名最佳实践</h2><p>该部分将介绍RESTful API命名的最佳实践，<br>将使用以下几类资源来进行案例分析：</p>
+<ol>
+<li>系统用户-user</li>
+<li>用户的账户-account</li>
+<li>网络设备-device</li>
+</ol>
+<h3 id="使用名词来表示资源"><a href="#使用名词来表示资源" class="headerlink" title="使用名词来表示资源"></a>使用名词来表示资源</h3><p>我们定义的URI都是对资源进行定位，相当于是资源的名字，而不是对资源进行操作的指令。</p>
+<p>获取资源信息的URI可以设计如下：</p>
+<pre><code>http://api.example.com/user-management/users/&#123;userId&#125;
+http://api.example.com/user-management/users
+http://api.example.com/device-management/devices/&#123;deviceId&#125;
+http://api.example.com/device-management/devices</code></pre><p>以上是一个简单的案例，为了更加详细地介绍，这里举出更多的例子。</p>
+<p>资源可以被分为4类</p>
+<ol>
+<li><p>document</p>
+<p>document资源就是一个单个的资源，我们可以提供URI来对这类资源进行定位：</p>
+<pre><code>http://api.example.com/device-management/devices/&#123;device-id&#125;
+http://api.example.com/user-management/users/&#123;id&#125;
+http://api.example.com/user-management/users/admin</code></pre></li>
+<li><p>collection</p>
+<p>collectioin资源就是指一类资源的集合。可以使用如下方式定位一个集合：</p>
+<pre><code>http://api.example.com/device-management/devices
+http://api.example.com/user-management/users
+http://api.example.com/user-management/users/&#123;id&#125;/accounts</code></pre></li>
+<li><p>store</p>
+<p>store资源是根据客户端的需要被定义出来的一类资源的集合。案例如下：</p>
+<pre><code># 获取用户购物车
+http://api.example.com/cart-management/users/&#123;id&#125;/carts
+# 获取用户播放列表
+http://api.example.com/song-management/users/&#123;id&#125;/playlists</code></pre></li>
+<li><p>controller</p>
+<p>Controller资源是一个程序上的概念，类似于对资源执行函数进行操作，并提供输入和输出。案例如下：</p>
+<pre><code>http://api.example.com/cart-management/users/&#123;id&#125;/cart/checkout
+http://api.example.com/song-management/users/&#123;id&#125;/playlist/play</code></pre><p>这里我们在URI中使用了动词，因为这些操作是针对资源特有的操作，而基本的CRUD操作并不适合直接在URI中定义。<br>后文会进行详细阐述。</p>
+</li>
+</ol>
+<h3 id="统一的命名规则"><a href="#统一的命名规则" class="headerlink" title="统一的命名规则"></a>统一的命名规则</h3><p>使用同一的资源命名和URI格式，可以最小限度地避免含糊不清，并最大限度地增加可读和可维护性。</p>
+<ol>
+<li><p>使用斜线来区别资源层级</p>
+<pre><code>http://api.example.com/device-management
+http://api.example.com/device-management/managed-devices
+http://api.example.com/device-management/managed-devices/&#123;id&#125;
+http://api.example.com/device-management/managed-devices/&#123;id&#125;/scripts
+http://api.example.com/device-management/managed-devices/&#123;id&#125;/scripts/&#123;id&#125;</code></pre></li>
+<li><p>不要在尾巴使用斜线</p>
+<p>在尾巴使用斜线虽然不存在语义上的问题，但可能会造成理解上的误会。</p>
+<pre><code># 一般的方式（存在尾部斜线）
+http://api.example.com/device-management/managed-devices/
+# 更好的方式（不存在尾部斜线）
+http://api.example.com/device-management/managed-devices</code></pre></li>
+<li><p>使用连字符</p>
+<p>使用连字符可以将URI的单词隔开，使其变得更加易读。<br>也可以使用驼峰法，但通过大小写来隔开单词的效果并没有使用连字符来隔开的效果好。</p>
+<pre><code># 不易读
+http://api.example.com/inventory-management/managedEntities/&#123;id&#125;/installScriptLocation
+# 更易读
+http://api.example.com/inventory-management/managed-entities/&#123;id&#125;/install-script-location</code></pre></li>
+<li><p>不使用下划线</p>
+<p>虽然使用下划线也可行且具有同样好的可读性，但在某些应用中，下划线可能会被解析成特殊字符，或者被完全隐藏。<br>所以并不推荐使用下划线。</p>
+<pre><code># 可能被错误解析
+http://api.example.com/inventory_management/managed_entities/&#123;id&#125;/install_script_location
+# 不会被错误解析
+http://api.example.com/inventory-management/managed-entities/&#123;id&#125;/install-script-location</code></pre></li>
+<li><p>使用小写字母</p>
+<p>根据<a target="_blank" rel="noopener" href="http://www.rfc-base.org/txt/rfc-3986.txt">RFC 3986</a>的定义，URI中Path部分是大小写敏感的。<br>将URI规定为统一使用小写，可以降低出错可能性。</p>
+<pre><code>http://api.example.org/my-folder/my-doc  //1
+HTTP://API.EXAMPLE.ORG/my-folder/my-doc  //2
+http://api.example.org/My-Folder/my-doc  //3</code></pre><p>上文中1的PATH（/my-folder/my-doc）和2的PATH(/my-folder/my-doc)使用了全部小写，是一样的。(Host大小写不敏感)<br>而3的PATH（/My-Folder/my-doc）则因为使用了大写而与前两个不同。</p>
+</li>
+<li><p>不使用文件后缀</p>
+<p>将文件后缀用在URI中没有任何意义，但是却会让URI看起来非常奇怪。<br>因此建议不要在URI中使用没有意义的文件后缀。<br>如果需要限定请求的文件类型，可以使用HTTP请求中提供的Content-Type属性来制定。</p>
+<pre><code># 使用了无意义的后缀
+http://api.example.com/device-management/managed-devices.xml
+# 未使用后缀
+http://api.example.com/device-management/managed-devices</code></pre></li>
+</ol>
+<h3 id="不使用CRUD函数来命名URI"><a href="#不使用CRUD函数来命名URI" class="headerlink" title="不使用CRUD函数来命名URI"></a>不使用CRUD函数来命名URI</h3><p>   URI仅仅被用来描述一个资源的位置，而不应该用来描述对资源的CRUD操作。<br>   所有对资源的CRUD操作应该使用HTTP提供的Method代替。</p>
+<pre><code>   # 获取所有devices
+   HTTP GET http://api.example.com/device-management/devices
+   # 创建新的device
+   HTTP POST http://api.example.com/device-management/devices
+   # 获取指定Id的devices
+   HTTP GET http://api.example.com/device-management/devices/&#123;id&#125;
+   # 全部更新（没有传递的参数会被置为默认值）指定Id的device
+   HTTP PUT http://api.example.com/device-management/devices/&#123;id&#125;
+   # 部分更新（仅更新传递部分的参数）指定Id的device
+   HTTP PATCH http://api.example.com/device-management/devices/&#123;id&#125;
+   # 删除指定Id的device
+   HTTP DELETE http://api.example.com/device-management/devices/&#123;id&#125;</code></pre><h3 id="使用查询组件来过滤"><a href="#使用查询组件来过滤" class="headerlink" title="使用查询组件来过滤"></a>使用查询组件来过滤</h3><p>在创建你的应用时，可能会遇到下面这些情况：</p>
+<ol>
+<li>需要对查询到的资源进行排序，并过滤指定条数的资源</li>
+<li>需要插入更多的查询条件</li>
+</ol>
+<p>这时，我们并不需要编写新的API，可以通过添加输入的参数来作为查询参数，实现以上功能。</p>
+<pre><code># 定位所有devices
+http://api.example.com/device-management/devices
+# 定位region为USA的所有devices
+http://api.example.com/device-management/devices?region=USA
+# 定位region为USA且brand为XYZ的所有devices
+http://api.example.com/device-management/managed-devices?region=USA&amp;brand=XYZ
+# 定位region为USA且brand为XYZ的所有devices，并按照installation-date进行排序，最终取出前10条
+http://api.example.com/device-management/managed-devices?region=USA&amp;brand=XYZ&amp;sort=installation-date&amp;limit=10</code></pre><h2 id="Ref-参考文献"><a href="#Ref-参考文献" class="headerlink" title="Ref 参考文献"></a><code>Ref</code> 参考文献</h2><p>[1] REST Resource Naming Guide[EB/OL] restfulapi. <a target="_blank" rel="noopener" href="https://restfulapi.net/resource-naming">https://restfulapi.net/resource-naming</a>. 2018-02-18.</p>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Regres</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://notes.wang/2018/02/18/2018-02-18-restful-api-she-ji-gai-lan/">https://notes.wang/2018/02/18/2018-02-18-restful-api-she-ji-gai-lan/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Regres</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/api/">
+                                    <span class="chip bg-color">api</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'CNCdAc25kv9LrKxaBmLs8a0s-gzGzoHsz',
+        appKey: 'z68jAhF522fybYhkWXOP7iLa',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2018/03/20/2018-03-20-guan-cha-zhe-mo-shi/">
+                    <div class="card-image">
+                        
+                        <img src="/images/design-pattern.png" class="responsive-img" alt="观察者模式">
+                        
+                        <span class="card-title">观察者模式</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            观察者模式中的push模式和pull模式，你是否都了解呢？
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2018-03-20
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/dev/" class="post-category">
+                                    dev
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/design-pattern/">
+                        <span class="chip bg-color">design pattern</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2017/12/16/2017-12-16-csrf-ji-chu-yu-shi-jian/">
+                    <div class="card-image">
+                        
+                        <img src="/images/csrf.png" class="responsive-img" alt="CSRF基础与实践">
+                        
+                        <span class="card-title">CSRF基础与实践</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            你了解CSRF吗？有哪些防御手段？应该怎么选择？
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-12-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/security/" class="post-category">
+                                    security
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/csrf/">
+                        <span class="chip bg-color">csrf</span>
+                    </a>
+                    
+                    <a href="/tags/web/">
+                        <span class="chip bg-color">web</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 一点雨见<br />'
+            + '文章作者: Regres<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">Regres</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+<!--            -->
+<!--            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span-->
+<!--                class="white-color">43.8k</span>&nbsp;字-->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_pv">-->
+<!--                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"-->
+<!--                    class="white-color"></span>&nbsp;次-->
+<!--            </span>-->
+<!--            -->
+<!--            -->
+<!--            <span id="busuanzi_container_site_uv">-->
+<!--                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"-->
+<!--                    class="white-color"></span>&nbsp;人-->
+<!--            </span>-->
+<!--            -->
+<!--            <br>-->
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "6";
+                    var startDate = "13";
+                    var startHour = "18";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.miitbeian.gov.cn" target="_blank">渝ICP备18006605号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/regreser" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:colewangyu@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
