@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://notes.wang/"/>
-  <updated>2023-04-15T14:12:27.447Z</updated>
+  <updated>2023-04-17T09:38:39.898Z</updated>
   <id>https://notes.wang/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件工程师使用ChatGPT日常——高效理解技术细节</title>
+    <link href="https://notes.wang/2023/04/07/2023-04-07-ruan-jian-gong-cheng-shi-shi-yong-chatgpt-ri-chang-gao-xiao-li-jie-ji-zhu-xi-jie/"/>
+    <id>https://notes.wang/2023/04/07/2023-04-07-ruan-jian-gong-cheng-shi-shi-yong-chatgpt-ri-chang-gao-xiao-li-jie-ji-zhu-xi-jie/</id>
+    <published>2023-04-07T12:16:29.000Z</published>
+    <updated>2023-04-17T09:38:39.898Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;最近在整理一些关于Helm在大型企业中实践的内容，突然想到一个关于Helm的最佳实践：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Chart
+        
+      
+    
+    </summary>
+    
+    
+      <category term="personalefficiency" scheme="https://notes.wang/categories/personalefficiency/"/>
+    
+    
+      <category term="chatgpt" scheme="https://notes.wang/tags/chatgpt/"/>
+    
+      <category term="efficiency" scheme="https://notes.wang/tags/efficiency/"/>
+    
+  </entry>
   
   <entry>
     <title>签名你的Git提交</title>
@@ -557,37 +588,6 @@
       <category term="ansible" scheme="https://notes.wang/tags/ansible/"/>
     
       <category term="configuration management" scheme="https://notes.wang/tags/configuration-management/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>免费好用的Blog - Github Pages</title>
-    <link href="https://notes.wang/2017/11/01/2017-11-01-mian-fei-hao-yong-de-blog-github-pages/"/>
-    <id>https://notes.wang/2017/11/01/2017-11-01-mian-fei-hao-yong-de-blog-github-pages/</id>
-    <published>2017-11-01T10:25:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;What-什么是github-pages？&quot;&gt;&lt;a href=&quot;#What-什么是github-pages？&quot; class=&quot;headerlink&quot; title=&quot;What 什么是github pages？&quot;&gt;&lt;/a&gt;&lt;code&gt;What&lt;/code&gt;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="tool" scheme="https://notes.wang/categories/tool/"/>
-    
-    
-      <category term="blog" scheme="https://notes.wang/tags/blog/"/>
-    
-      <category term="github" scheme="https://notes.wang/tags/github/"/>
-    
-      <category term="hexo" scheme="https://notes.wang/tags/hexo/"/>
     
   </entry>
   

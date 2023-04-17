@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>软件工程师使用ChatGPT日常——高效理解技术细节</title>
+      <link href="/2023/04/07/2023-04-07-ruan-jian-gong-cheng-shi-shi-yong-chatgpt-ri-chang-gao-xiao-li-jie-ji-zhu-xi-jie/"/>
+      <url>/2023/04/07/2023-04-07-ruan-jian-gong-cheng-shi-shi-yong-chatgpt-ri-chang-gao-xiao-li-jie-ji-zhu-xi-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>最近在整理一些关于Helm在大型企业中实践的内容，突然想到一个关于Helm的最佳实践：</p><blockquote><p>Chart names must be lower case letters and numbers. Words may be separated with dashes(-)</p></blockquote><p>在各种软件产品中，我不止一次看到对于大小写，破折号/下划线的要求。这次看到Helm的最佳实践，我依然很疑惑——为什么不使用大写字符和破折号会成为一个最佳实践？如果说为了命名风格一致，但为什么甚至会在某些软件中被直接禁止？比如Helm在install时如果存在大写或者下划线会直接报错。</p><p>关于这个问题我尝试使用传统的搜索引擎，但并不能很好的找到答案：<br><img src="https://s2.loli.net/2023/04/17/GB25rc38MsJFPVh.png" alt="搜索引擎找不到满意答案"></p><h1 id="通过ChatGPT来搜索答案"><a href="#通过ChatGPT来搜索答案" class="headerlink" title="通过ChatGPT来搜索答案"></a>通过ChatGPT来搜索答案</h1><p>从上图可以看到，搜出来的结果基本都是重复官方要求的不能使用下划线和大写字母。如果利用ChatGPT来找答案，是否能得到一个更好的答案呢？<br>以下是我的对话记录：<br><img src="https://s2.loli.net/2023/04/17/1neoM5wtO3rjDQx.png" alt="Helm命名规范与ChatGPT对话1"></p><p>从回答中可以看出是因为Kubernetes的命名规范限制了作为工具的Helm的命名，这很好理解。但是Kubernetes为什么会要求命名不能使用大写呢？继续追问：<br><img src="https://s2.loli.net/2023/04/17/Ktc53lgheHyznZa.png" alt="Helm命名规范与ChatGPT对话2"></p><p>经过两轮对话，ChatGPT已经给出了关键原因：为了避免操作系统中对于大小写不一致的处理方式可能会导致无法正确识别和处理对象。当然这也不够直接，继续问一个更具体的案例：<br><img src="https://s2.loli.net/2023/04/17/opfWqJ1KXG7eVNE.png" alt="Helm命名规范与ChatGPT对话3"></p><p>到这里，答案基本就明了：在Linux中能够创建myFile.txt和MyFile.txt的两个文件，但是如果同样的创建方式在Windows中执行一遍，就会出错。因此就有了通过规定只允许小写字母来避免这样的问题发声。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>整个过程，只用了大概2分钟，如果使用传统的搜索引擎，我并没有办法很快找到答案。ChatGPT在解决这个问题上有很大优势。<br>但ChatGPT在处理这样的日常任务时就完全没有缺点吗？当然不是。有以下这几个问题：</p><ol><li><p><strong>提问（Prompt）的方式决定回答的质量</strong></p><p> 相比于传统的搜索引擎靠关键字的方式，ChatGPT的问题方式事实上变得复杂了很多，同时也变得尤为关键。你描述的详细程度，描述的方式发生变化，得到的答案也不一样。同一个问题，我换一种问法，如下图所示：<br> <img src="https://s2.loli.net/2023/04/17/nmv89OB4WFAGLet.png" alt="不同的提问方式"><br> 这是一个相对直接的提问方式，得到的答案就和之前大不相同了。这里的解释是需要保持和Kubernetes命名规范一致，并没有像前文一样解释命名不一致可能会导致无法在部署时被Kubernetes正确解析和部署。</p></li><li><p><strong>回答的准确性</strong></p><p> 有时候ChatGPT的答案并不准确，相比之下，有一个靠谱的网站背书+一定数量的评论，这样的答案可信度更高。而ChatGPT的回答，比如：<br> <img src="https://s2.loli.net/2023/04/17/9j87B6AvayDWm1E.png" alt="难以验证的答案"><br> 我们是否敢直接用来做一些重要结论的依据呢？</p></li><li><p><strong>准确的回答就一定好？</strong></p><p> 我并不觉得准确的回答就一定好。很多时候我们使用搜索引擎去尝试解决一个问题，不只是为了解决问题本身，也希望能够从解决问题的过程中学到一些相关的知识，但是直接了当的回答，是否会一定程度的限制我们想象力的衍生呢？</p></li></ol><p>当然总的来说，将ChatGPT当作一个高级的搜索引擎来解决一些具体问题，的确是能够提高效率的，可以一试。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> personalefficiency </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> chatgpt </tag>
+            
+            <tag> efficiency </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>签名你的Git提交</title>
       <link href="/2022/12/11/2022-12-11-qian-ming-ni-de-git-ti-jiao/"/>
       <url>/2022/12/11/2022-12-11-qian-ming-ni-de-git-ti-jiao/</url>
