@@ -417,11 +417,11 @@
       
         <tags>
             
+            <tag> security </tag>
+            
             <tag> csrf </tag>
             
             <tag> web </tag>
-            
-            <tag> security </tag>
             
         </tags>
       
@@ -518,7 +518,7 @@
             
             <tag> auth </tag>
             
-            <tag> security1 </tag>
+            <tag> security </tag>
             
         </tags>
       

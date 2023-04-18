@@ -469,11 +469,11 @@
       <category term="software_engineering" scheme="https://notes.wang/categories/software-engineering/"/>
     
     
+      <category term="security" scheme="https://notes.wang/tags/security/"/>
+    
       <category term="csrf" scheme="https://notes.wang/tags/csrf/"/>
     
       <category term="web" scheme="https://notes.wang/tags/web/"/>
-    
-      <category term="security" scheme="https://notes.wang/tags/security/"/>
     
   </entry>
   
@@ -554,7 +554,7 @@
     <link href="https://notes.wang/2017/11/06/2017-11-06-ding-zhi-hua-spring-security/"/>
     <id>https://notes.wang/2017/11/06/2017-11-06-ding-zhi-hua-spring-security/</id>
     <published>2017-11-06T14:05:00.000Z</published>
-    <updated>2023-04-18T03:57:52.492Z</updated>
+    <updated>2023-04-18T04:12:47.852Z</updated>
     
     <summary type="html">
     
@@ -576,7 +576,7 @@
     
       <category term="auth" scheme="https://notes.wang/tags/auth/"/>
     
-      <category term="security1" scheme="https://notes.wang/tags/security1/"/>
+      <category term="security" scheme="https://notes.wang/tags/security/"/>
     
   </entry>
   
