@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> personalefficiency </category>
+          <category> personal_efficiency </category>
           
       </categories>
       
@@ -21,8 +21,6 @@
         <tags>
             
             <tag> chatgpt </tag>
-            
-            <tag> efficiency </tag>
             
         </tags>
       
@@ -40,7 +38,7 @@
       
       <categories>
           
-          <category> dev </category>
+          <category> tools </category>
           
       </categories>
       
@@ -65,7 +63,7 @@
       
       <categories>
           
-          <category> efficiency </category>
+          <category> personal_efficiency </category>
           
       </categories>
       
@@ -117,7 +115,7 @@
       
       <categories>
           
-          <category> tool </category>
+          <category> tools </category>
           
       </categories>
       
@@ -144,7 +142,7 @@
       
       <categories>
           
-          <category> tool </category>
+          <category> tools </category>
           
       </categories>
       
@@ -169,14 +167,14 @@
       
       <categories>
           
-          <category> life </category>
+          <category> personal_efficiency </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> management </tag>
+            <tag> life_management </tag>
             
         </tags>
       
@@ -194,16 +192,14 @@
       
       <categories>
           
-          <category> personal </category>
+          <category> retro </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> retro </tag>
-            
-            <tag> software engineering </tag>
+            <tag> software_engineering </tag>
             
         </tags>
       
@@ -221,16 +217,18 @@
       
       <categories>
           
-          <category> devops </category>
+          <category> software_engineering_efficiency </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> software engineering </tag>
-            
             <tag> agile </tag>
+            
+            <tag> devops </tag>
+            
+            <tag> waterfall </tag>
             
         </tags>
       
@@ -248,7 +246,7 @@
       
       <categories>
           
-          <category> tool </category>
+          <category> software_engineering </category>
           
       </categories>
       
@@ -256,6 +254,8 @@
         <tags>
             
             <tag> git </tag>
+            
+            <tag> github </tag>
             
         </tags>
       
@@ -273,14 +273,14 @@
       
       <categories>
           
-          <category> devops </category>
+          <category> software_engineering_efficiency </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> branch model </tag>
+            <tag> branch_model </tag>
             
         </tags>
       
@@ -298,7 +298,7 @@
       
       <categories>
           
-          <category> devops </category>
+          <category> software_engineering_efficiency </category>
           
       </categories>
       
@@ -307,7 +307,9 @@
             
             <tag> aws </tag>
             
-            <tag> cert </tag>
+            <tag> cloud </tag>
+            
+            <tag> certification </tag>
             
         </tags>
       
@@ -325,7 +327,7 @@
       
       <categories>
           
-          <category> devops </category>
+          <category> software_engineering_efficiency </category>
           
       </categories>
       
@@ -337,6 +339,8 @@
             <tag> lambda </tag>
             
             <tag> cicd </tag>
+            
+            <tag> cloud </tag>
             
         </tags>
       
@@ -354,14 +358,14 @@
       
       <categories>
           
-          <category> dev </category>
+          <category> software_engineering </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> design pattern </tag>
+            <tag> design_pattern </tag>
             
         </tags>
       
@@ -379,7 +383,7 @@
       
       <categories>
           
-          <category> dev </category>
+          <category> software_engineering </category>
           
       </categories>
       
@@ -387,6 +391,8 @@
         <tags>
             
             <tag> api </tag>
+            
+            <tag> restful </tag>
             
         </tags>
       
@@ -404,7 +410,7 @@
       
       <categories>
           
-          <category> security </category>
+          <category> software_engineering </category>
           
       </categories>
       
@@ -414,6 +420,8 @@
             <tag> csrf </tag>
             
             <tag> web </tag>
+            
+            <tag> security </tag>
             
         </tags>
       
@@ -431,7 +439,7 @@
       
       <categories>
           
-          <category> computer fundation </category>
+          <category> software_engineering </category>
           
       </categories>
       
@@ -466,7 +474,7 @@
       
       <categories>
           
-          <category> dev </category>
+          <category> software_engineering </category>
           
       </categories>
       
@@ -474,6 +482,14 @@
         <tags>
             
             <tag> api </tag>
+            
+            <tag> rpc </tag>
+            
+            <tag> restful </tag>
+            
+            <tag> event_driven </tag>
+            
+            <tag> graphql </tag>
             
         </tags>
       
@@ -491,7 +507,7 @@
       
       <categories>
           
-          <category> dev </category>
+          <category> software_engineering </category>
           
       </categories>
       
@@ -501,6 +517,8 @@
             <tag> spring </tag>
             
             <tag> auth </tag>
+            
+            <tag> security1 </tag>
             
         </tags>
       
@@ -518,7 +536,7 @@
       
       <categories>
           
-          <category> devops </category>
+          <category> software_engineering_efficiency </category>
           
       </categories>
       
@@ -527,7 +545,7 @@
             
             <tag> ansible </tag>
             
-            <tag> configuration management </tag>
+            <tag> configuration_management </tag>
             
         </tags>
       
@@ -545,7 +563,7 @@
       
       <categories>
           
-          <category> tool </category>
+          <category> tools </category>
           
       </categories>
       
@@ -554,9 +572,7 @@
             
             <tag> blog </tag>
             
-            <tag> github </tag>
-            
-            <tag> hexo </tag>
+            <tag> github_pages </tag>
             
         </tags>
       

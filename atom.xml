@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://notes.wang/"/>
-  <updated>2023-04-17T09:38:39.898Z</updated>
+  <updated>2023-04-18T04:10:18.522Z</updated>
   <id>https://notes.wang/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://notes.wang/2023/04/07/2023-04-07-ruan-jian-gong-cheng-shi-shi-yong-chatgpt-ri-chang-gao-xiao-li-jie-ji-zhu-xi-jie/"/>
     <id>https://notes.wang/2023/04/07/2023-04-07-ruan-jian-gong-cheng-shi-shi-yong-chatgpt-ri-chang-gao-xiao-li-jie-ji-zhu-xi-jie/</id>
     <published>2023-04-07T12:16:29.000Z</published>
-    <updated>2023-04-17T09:38:39.898Z</updated>
+    <updated>2023-04-18T04:10:18.522Z</updated>
     
     <summary type="html">
     
@@ -38,12 +38,10 @@
     </summary>
     
     
-      <category term="personalefficiency" scheme="https://notes.wang/categories/personalefficiency/"/>
+      <category term="personal_efficiency" scheme="https://notes.wang/categories/personal-efficiency/"/>
     
     
       <category term="chatgpt" scheme="https://notes.wang/tags/chatgpt/"/>
-    
-      <category term="efficiency" scheme="https://notes.wang/tags/efficiency/"/>
     
   </entry>
   
@@ -52,7 +50,7 @@
     <link href="https://notes.wang/2022/12/11/2022-12-11-qian-ming-ni-de-git-ti-jiao/"/>
     <id>https://notes.wang/2022/12/11/2022-12-11-qian-ming-ni-de-git-ti-jiao/</id>
     <published>2022-12-11T14:16:11.000Z</published>
-    <updated>2023-04-15T14:12:27.447Z</updated>
+    <updated>2023-04-18T04:09:40.702Z</updated>
     
     <summary type="html">
     
@@ -67,7 +65,7 @@
     </summary>
     
     
-      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+      <category term="tools" scheme="https://notes.wang/categories/tools/"/>
     
     
       <category term="git" scheme="https://notes.wang/tags/git/"/>
@@ -79,7 +77,7 @@
     <link href="https://notes.wang/2022/08/11/2022-08-11-you-xiao-de-xue-xi/"/>
     <id>https://notes.wang/2022/08/11/2022-08-11-you-xiao-de-xue-xi/</id>
     <published>2022-08-11T11:38:12.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:09:15.822Z</updated>
     
     <summary type="html">
     
@@ -94,7 +92,7 @@
     </summary>
     
     
-      <category term="efficiency" scheme="https://notes.wang/categories/efficiency/"/>
+      <category term="personal_efficiency" scheme="https://notes.wang/categories/personal-efficiency/"/>
     
     
       <category term="learn" scheme="https://notes.wang/tags/learn/"/>
@@ -106,7 +104,7 @@
     <link href="https://notes.wang/2022/04/09/2022-04-09-chao-di-li-lu-de-fen-qi-dai-kuan-neng-dai-ma/"/>
     <id>https://notes.wang/2022/04/09/2022-04-09-chao-di-li-lu-de-fen-qi-dai-kuan-neng-dai-ma/</id>
     <published>2022-04-09T03:38:12.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:08:59.692Z</updated>
     
     <summary type="html">
     
@@ -135,7 +133,7 @@
     <link href="https://notes.wang/2022/03/22/2022-03-22-da-jian-windows-kai-fa-huan-jing/"/>
     <id>https://notes.wang/2022/03/22/2022-03-22-da-jian-windows-kai-fa-huan-jing/</id>
     <published>2022-03-22T15:48:04.000Z</published>
-    <updated>2023-04-15T14:39:49.277Z</updated>
+    <updated>2023-04-18T04:06:11.452Z</updated>
     
     <summary type="html">
     
@@ -150,7 +148,7 @@
     </summary>
     
     
-      <category term="tool" scheme="https://notes.wang/categories/tool/"/>
+      <category term="tools" scheme="https://notes.wang/categories/tools/"/>
     
     
       <category term="windows" scheme="https://notes.wang/tags/windows/"/>
@@ -164,7 +162,7 @@
     <link href="https://notes.wang/2022/03/22/2022-03-22-wo-xuan-ze-macos-zuo-wei-kai-fa-zhu-li-ji-de-li-you/"/>
     <id>https://notes.wang/2022/03/22/2022-03-22-wo-xuan-ze-macos-zuo-wei-kai-fa-zhu-li-ji-de-li-you/</id>
     <published>2022-03-22T14:48:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:05:57.102Z</updated>
     
     <summary type="html">
     
@@ -179,7 +177,7 @@
     </summary>
     
     
-      <category term="tool" scheme="https://notes.wang/categories/tool/"/>
+      <category term="tools" scheme="https://notes.wang/categories/tools/"/>
     
     
       <category term="macos" scheme="https://notes.wang/tags/macos/"/>
@@ -191,7 +189,7 @@
     <link href="https://notes.wang/2022/03/06/2022-03-06-wo-de-ren-sheng-guan-li/"/>
     <id>https://notes.wang/2022/03/06/2022-03-06-wo-de-ren-sheng-guan-li/</id>
     <published>2022-03-06T14:38:12.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:03:12.352Z</updated>
     
     <summary type="html">
     
@@ -206,10 +204,10 @@
     </summary>
     
     
-      <category term="life" scheme="https://notes.wang/categories/life/"/>
+      <category term="personal_efficiency" scheme="https://notes.wang/categories/personal-efficiency/"/>
     
     
-      <category term="management" scheme="https://notes.wang/tags/management/"/>
+      <category term="life_management" scheme="https://notes.wang/tags/life-management/"/>
     
   </entry>
   
@@ -218,7 +216,7 @@
     <link href="https://notes.wang/2021/07/24/2021-07-24-wo-yu-ruan-jian-gong-cheng-de-shi-nian/"/>
     <id>https://notes.wang/2021/07/24/2021-07-24-wo-yu-ruan-jian-gong-cheng-de-shi-nian/</id>
     <published>2021-07-24T14:48:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:02:37.302Z</updated>
     
     <summary type="html">
     
@@ -233,12 +231,10 @@
     </summary>
     
     
-      <category term="personal" scheme="https://notes.wang/categories/personal/"/>
+      <category term="retro" scheme="https://notes.wang/categories/retro/"/>
     
     
-      <category term="retro" scheme="https://notes.wang/tags/retro/"/>
-    
-      <category term="software engineering" scheme="https://notes.wang/tags/software-engineering/"/>
+      <category term="software_engineering" scheme="https://notes.wang/tags/software-engineering/"/>
     
   </entry>
   
@@ -247,7 +243,7 @@
     <link href="https://notes.wang/2021/04/06/2021-04-06-devops-de-yi-huo-shi-jian-gai-lan/"/>
     <id>https://notes.wang/2021/04/06/2021-04-06-devops-de-yi-huo-shi-jian-gai-lan/</id>
     <published>2021-04-06T14:48:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:01:44.292Z</updated>
     
     <summary type="html">
     
@@ -262,12 +258,14 @@
     </summary>
     
     
-      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+      <category term="software_engineering_efficiency" scheme="https://notes.wang/categories/software-engineering-efficiency/"/>
     
-    
-      <category term="software engineering" scheme="https://notes.wang/tags/software-engineering/"/>
     
       <category term="agile" scheme="https://notes.wang/tags/agile/"/>
+    
+      <category term="devops" scheme="https://notes.wang/tags/devops/"/>
+    
+      <category term="waterfall" scheme="https://notes.wang/tags/waterfall/"/>
     
   </entry>
   
@@ -276,7 +274,7 @@
     <link href="https://notes.wang/2020/11/14/2020-11-14-git-cang-ku-guan-li-submodule/"/>
     <id>https://notes.wang/2020/11/14/2020-11-14-git-cang-ku-guan-li-submodule/</id>
     <published>2020-11-14T14:48:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:01:01.282Z</updated>
     
     <summary type="html">
     
@@ -291,10 +289,12 @@
     </summary>
     
     
-      <category term="tool" scheme="https://notes.wang/categories/tool/"/>
+      <category term="software_engineering" scheme="https://notes.wang/categories/software-engineering/"/>
     
     
       <category term="git" scheme="https://notes.wang/tags/git/"/>
+    
+      <category term="github" scheme="https://notes.wang/tags/github/"/>
     
   </entry>
   
@@ -303,7 +303,7 @@
     <link href="https://notes.wang/2020/06/27/2020-06-27-branch-model-overview/"/>
     <id>https://notes.wang/2020/06/27/2020-06-27-branch-model-overview/</id>
     <published>2020-06-27T15:48:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:00:23.132Z</updated>
     
     <summary type="html">
     
@@ -319,10 +319,10 @@
     </summary>
     
     
-      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+      <category term="software_engineering_efficiency" scheme="https://notes.wang/categories/software-engineering-efficiency/"/>
     
     
-      <category term="branch model" scheme="https://notes.wang/tags/branch-model/"/>
+      <category term="branch_model" scheme="https://notes.wang/tags/branch-model/"/>
     
   </entry>
   
@@ -331,7 +331,7 @@
     <link href="https://notes.wang/2020/06/19/2020-06-19-aws-solution-architect-professional/"/>
     <id>https://notes.wang/2020/06/19/2020-06-19-aws-solution-architect-professional/</id>
     <published>2020-06-19T15:50:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T04:00:16.872Z</updated>
     
     <summary type="html">
     
@@ -346,12 +346,14 @@
     </summary>
     
     
-      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+      <category term="software_engineering_efficiency" scheme="https://notes.wang/categories/software-engineering-efficiency/"/>
     
     
       <category term="aws" scheme="https://notes.wang/tags/aws/"/>
     
-      <category term="cert" scheme="https://notes.wang/tags/cert/"/>
+      <category term="cloud" scheme="https://notes.wang/tags/cloud/"/>
+    
+      <category term="certification" scheme="https://notes.wang/tags/certification/"/>
     
   </entry>
   
@@ -360,7 +362,7 @@
     <link href="https://notes.wang/2019/09/22/2019-09-22-aws-lambda-cicd/"/>
     <id>https://notes.wang/2019/09/22/2019-09-22-aws-lambda-cicd/</id>
     <published>2019-09-22T15:40:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T03:59:59.452Z</updated>
     
     <summary type="html">
     
@@ -375,7 +377,7 @@
     </summary>
     
     
-      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+      <category term="software_engineering_efficiency" scheme="https://notes.wang/categories/software-engineering-efficiency/"/>
     
     
       <category term="aws" scheme="https://notes.wang/tags/aws/"/>
@@ -384,6 +386,8 @@
     
       <category term="cicd" scheme="https://notes.wang/tags/cicd/"/>
     
+      <category term="cloud" scheme="https://notes.wang/tags/cloud/"/>
+    
   </entry>
   
   <entry>
@@ -391,7 +395,7 @@
     <link href="https://notes.wang/2018/03/20/2018-03-20-guan-cha-zhe-mo-shi/"/>
     <id>https://notes.wang/2018/03/20/2018-03-20-guan-cha-zhe-mo-shi/</id>
     <published>2018-03-20T15:25:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T03:59:39.842Z</updated>
     
     <summary type="html">
     
@@ -406,10 +410,10 @@
     </summary>
     
     
-      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+      <category term="software_engineering" scheme="https://notes.wang/categories/software-engineering/"/>
     
     
-      <category term="design pattern" scheme="https://notes.wang/tags/design-pattern/"/>
+      <category term="design_pattern" scheme="https://notes.wang/tags/design-pattern/"/>
     
   </entry>
   
@@ -418,7 +422,7 @@
     <link href="https://notes.wang/2018/02/18/2018-02-18-restful-api-she-ji-gai-lan/"/>
     <id>https://notes.wang/2018/02/18/2018-02-18-restful-api-she-ji-gai-lan/</id>
     <published>2018-02-18T12:25:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T03:59:25.842Z</updated>
     
     <summary type="html">
     
@@ -433,10 +437,12 @@
     </summary>
     
     
-      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+      <category term="software_engineering" scheme="https://notes.wang/categories/software-engineering/"/>
     
     
       <category term="api" scheme="https://notes.wang/tags/api/"/>
+    
+      <category term="restful" scheme="https://notes.wang/tags/restful/"/>
     
   </entry>
   
@@ -445,7 +451,7 @@
     <link href="https://notes.wang/2017/12/16/2017-12-16-csrf-ji-chu-yu-shi-jian/"/>
     <id>https://notes.wang/2017/12/16/2017-12-16-csrf-ji-chu-yu-shi-jian/</id>
     <published>2017-12-16T11:25:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T03:58:42.572Z</updated>
     
     <summary type="html">
     
@@ -460,12 +466,14 @@
     </summary>
     
     
-      <category term="security" scheme="https://notes.wang/categories/security/"/>
+      <category term="software_engineering" scheme="https://notes.wang/categories/software-engineering/"/>
     
     
       <category term="csrf" scheme="https://notes.wang/tags/csrf/"/>
     
       <category term="web" scheme="https://notes.wang/tags/web/"/>
+    
+      <category term="security" scheme="https://notes.wang/tags/security/"/>
     
   </entry>
   
@@ -474,7 +482,7 @@
     <link href="https://notes.wang/2017/12/10/2017-12-10-dang-ni-zai-liu-lan-qi-shu-ru-url-bing-hui-che-fa-sheng-liao-shi-me/"/>
     <id>https://notes.wang/2017/12/10/2017-12-10-dang-ni-zai-liu-lan-qi-shu-ru-url-bing-hui-che-fa-sheng-liao-shi-me/</id>
     <published>2017-12-10T12:31:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T03:58:27.532Z</updated>
     
     <summary type="html">
     
@@ -489,7 +497,7 @@
     </summary>
     
     
-      <category term="computer fundation" scheme="https://notes.wang/categories/computer-fundation/"/>
+      <category term="software_engineering" scheme="https://notes.wang/categories/software-engineering/"/>
     
     
       <category term="os" scheme="https://notes.wang/tags/os/"/>
@@ -511,7 +519,7 @@
     <link href="https://notes.wang/2017/11/27/2017-11-27-api-de-bu-tong-jia-gou-feng-ge-gai-shu/"/>
     <id>https://notes.wang/2017/11/27/2017-11-27-api-de-bu-tong-jia-gou-feng-ge-gai-shu/</id>
     <published>2017-11-27T13:25:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T03:59:18.472Z</updated>
     
     <summary type="html">
     
@@ -526,10 +534,18 @@
     </summary>
     
     
-      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+      <category term="software_engineering" scheme="https://notes.wang/categories/software-engineering/"/>
     
     
       <category term="api" scheme="https://notes.wang/tags/api/"/>
+    
+      <category term="rpc" scheme="https://notes.wang/tags/rpc/"/>
+    
+      <category term="restful" scheme="https://notes.wang/tags/restful/"/>
+    
+      <category term="event_driven" scheme="https://notes.wang/tags/event-driven/"/>
+    
+      <category term="graphql" scheme="https://notes.wang/tags/graphql/"/>
     
   </entry>
   
@@ -538,7 +554,7 @@
     <link href="https://notes.wang/2017/11/06/2017-11-06-ding-zhi-hua-spring-security/"/>
     <id>https://notes.wang/2017/11/06/2017-11-06-ding-zhi-hua-spring-security/</id>
     <published>2017-11-06T14:05:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T03:57:52.492Z</updated>
     
     <summary type="html">
     
@@ -553,12 +569,14 @@
     </summary>
     
     
-      <category term="dev" scheme="https://notes.wang/categories/dev/"/>
+      <category term="software_engineering" scheme="https://notes.wang/categories/software-engineering/"/>
     
     
       <category term="spring" scheme="https://notes.wang/tags/spring/"/>
     
       <category term="auth" scheme="https://notes.wang/tags/auth/"/>
+    
+      <category term="security1" scheme="https://notes.wang/tags/security1/"/>
     
   </entry>
   
@@ -567,7 +585,7 @@
     <link href="https://notes.wang/2017/11/02/2017-11-02-ansible-gai-lan/"/>
     <id>https://notes.wang/2017/11/02/2017-11-02-ansible-gai-lan/</id>
     <published>2017-11-02T10:25:00.000Z</published>
-    <updated>2023-04-15T14:09:57.407Z</updated>
+    <updated>2023-04-18T03:56:59.292Z</updated>
     
     <summary type="html">
     
@@ -582,12 +600,12 @@
     </summary>
     
     
-      <category term="devops" scheme="https://notes.wang/categories/devops/"/>
+      <category term="software_engineering_efficiency" scheme="https://notes.wang/categories/software-engineering-efficiency/"/>
     
     
       <category term="ansible" scheme="https://notes.wang/tags/ansible/"/>
     
-      <category term="configuration management" scheme="https://notes.wang/tags/configuration-management/"/>
+      <category term="configuration_management" scheme="https://notes.wang/tags/configuration-management/"/>
     
   </entry>
   
