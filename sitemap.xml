@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.notes.wang/categories/</loc>
+    <loc>https://www.notes.wang/categories/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.notes.wang/tags/git/</loc>
+    <loc>https://www.notes.wang/tags/git/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.notes.wang/post/</loc>
+    <loc>https://www.notes.wang/post/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.notes.wang/</loc>
+    <loc>https://www.notes.wang/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.notes.wang/tags/</loc>
+    <loc>https://www.notes.wang/tags/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.notes.wang/categories/tool/</loc>
+    <loc>https://www.notes.wang/categories/tool/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.notes.wang/post/%E7%AD%BE%E5%90%8D%E4%BD%A0%E7%9A%84git%E6%8F%90%E4%BA%A4/</loc>
+    <loc>https://www.notes.wang/post/%E7%AD%BE%E5%90%8D%E4%BD%A0%E7%9A%84git%E6%8F%90%E4%BA%A4/</loc>
     <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url>
 </urlset>
