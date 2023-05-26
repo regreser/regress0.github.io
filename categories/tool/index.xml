@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SeeYou</title>
-    <link>http://example.org/</link>
-    <description>Recent content on SeeYou</description>
+    <title>tool on SeeYou</title>
+    <link>http://example.org/categories/tool/</link>
+    <description>Recent content in tool on SeeYou</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/categories/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>签名你的Git提交</title>
       <link>http://example.org/post/%E7%AD%BE%E5%90%8D%E4%BD%A0%E7%9A%84git%E6%8F%90%E4%BA%A4/</link>
