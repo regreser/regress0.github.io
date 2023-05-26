@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on SeeYou</title>
-    <link>http://example.org/tags/git/</link>
+    <link>http://notes.wang/tags/git/</link>
     <description>Recent content in git on SeeYou</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://notes.wang/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>签名你的Git提交</title>
-      <link>http://example.org/post/%E7%AD%BE%E5%90%8D%E4%BD%A0%E7%9A%84git%E6%8F%90%E4%BA%A4/</link>
+      <link>http://notes.wang/post/%E7%AD%BE%E5%90%8D%E4%BD%A0%E7%9A%84git%E6%8F%90%E4%BA%A4/</link>
       <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/%E7%AD%BE%E5%90%8D%E4%BD%A0%E7%9A%84git%E6%8F%90%E4%BA%A4/</guid>
+      <guid>http://notes.wang/post/%E7%AD%BE%E5%90%8D%E4%BD%A0%E7%9A%84git%E6%8F%90%E4%BA%A4/</guid>
       <description>
         
           
