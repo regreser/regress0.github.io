@@ -1,8 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>life-efficiency on SeeYu</title><link>https://www.notes.wang/categories/life-efficiency/</link><description>Recent content in life-efficiency on SeeYu</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 19 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.notes.wang/categories/life-efficiency/index.xml" rel="self" type="application/rss+xml"/><item><title>学软件技术一定要实战？</title><link>https://www.notes.wang/post/%E5%AD%A6%E8%BD%AF%E4%BB%B6%E4%B8%80%E5%AE%9A%E8%A6%81%E5%AE%9E%E6%88%98/</link><pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate><guid>https://www.notes.wang/post/%E5%AD%A6%E8%BD%AF%E4%BB%B6%E4%B8%80%E5%AE%9A%E8%A6%81%E5%AE%9E%E6%88%98/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>life-efficiency on SeeYu</title><link>https://www.notes.wang/categories/life-efficiency/</link><description>Recent content in life-efficiency on SeeYu</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 07 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.notes.wang/categories/life-efficiency/index.xml" rel="self" type="application/rss+xml"/><item><title>软件工程师使用ChatGPT日常——高效理解技术细节</title><link>https://www.notes.wang/post/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%BD%BF%E7%94%A8chatgpt%E6%97%A5%E5%B8%B8%E9%AB%98%E6%95%88%E7%90%86%E8%A7%A3%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82/</link><pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate><guid>https://www.notes.wang/post/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%BD%BF%E7%94%A8chatgpt%E6%97%A5%E5%B8%B8%E9%AB%98%E6%95%88%E7%90%86%E8%A7%A3%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82/</guid><description>
+问题 最近在整理一些关于Helm在大型企业中实践的内容，突然想到一个关于Helm的最佳实践：
+Chart names must be lower case letters and numbers. Words may be separated with dashes(-)
+在各种软件产品中，我不止一次看到对于大小写，破折号/下划线的要求。这次看到Helm的最佳实践，我依然很疑惑——为什么不使用大写字符和破折号会成为一个最佳实践？如果说为了命名风格一致，但为什么甚至会在某些软件中被直接禁止？比如Helm在install时如果存在大写或者下划线会直接报错。
+关于这个问题我尝试使用传统的搜索引擎，但并不能很好的找到答案： 通过ChatGPT来搜索答案 从上图可以看到，搜出来的结果基本都是重复官方要求的不能使用下划线和大写字母。如果利用ChatGPT来找答案，是否能得到一个更好的答案呢？ 以下是我的对话记录： 从回答中可以看出是因为Kubernetes的命名规范限制了作为工具的Helm的命名，这很好理解。但是Kubernetes为什么会要求命名不能使用大写呢？继续追问： 经过两轮对话，ChatGPT已经给出了关键原因：为了避免操作系统中对于大小写不一致的处理方式可能会导致无法正确识别和处理对象。当然这也不够直接，继续问一个更具体的案例： 到这里，答案基本就明了：在Linux中能够创建myFile.txt和MyFile.txt的两个文件，但是如果同样的创建方式在Windows中执行一遍，就会出错。因此就有了通过规定只允许小写字母来避免这样的问题发声。
+总结 整个过程，只用了大概2分钟，如果使用传统的搜索引擎，我并没有办法很快找到答案。ChatGPT在解决这个问题上有很大优势。 但ChatGPT在处理这样的日常任务时就完全没有缺点吗？当然不是。有以下这几个问题：
+提问（Prompt）的方式决定回答的质量
+相比于传统的搜索引擎靠关键字的方式，ChatGPT的问题方式事实上变得复杂了很多，同时也变得尤为关键。你描述的详细程度，描述的方式发生变化，得到的答案也不一样。同一个问题，我换一种问法，如下图所示： 这是一个相对直接的提问方式，得到的答案就和之前大不相同了。这里的解释是需要保持和Kubernetes命名规范一致，并没有像前文一样解释命名不一致可能会导致无法在部署时被Kubernetes正确解析和部署。
+回答的准确性
+有时候ChatGPT的答案并不准确，相比之下，有一个靠谱的网站背书+一定数量的评论，这样的答案可信度更高。而ChatGPT的回答，比如： 我们是否敢直接用来做一些重要结论的依据呢？
+准确的回答就一定好？
+我并不觉得准确的回答就一定好。很多时候我们使用搜索引擎去尝试解决一个问题，不只是为了解决问题本身，也希望能够从解决问题的过程中学到一些相关的知识，但是直接了当的回答，是否会一定程度的限制我们想象力的衍生呢？
+当然总的来说，将ChatGPT当作一个高级的搜索引擎来解决一些具体问题，的确是能够提高效率的，可以一试。</description></item><item><title>学软件技术一定要实战？</title><link>https://www.notes.wang/post/%E5%AD%A6%E8%BD%AF%E4%BB%B6%E4%B8%80%E5%AE%9A%E8%A6%81%E5%AE%9E%E6%88%98/</link><pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate><guid>https://www.notes.wang/post/%E5%AD%A6%E8%BD%AF%E4%BB%B6%E4%B8%80%E5%AE%9A%E8%A6%81%E5%AE%9E%E6%88%98/</guid><description>
 学习软件技术要实战，可能是多数从业者的共识。但为什么学习软件技术要实战？实战无论是寻找合适的实战项目还是进行实战需要的时间都要比阅读一本技术书籍或者技术博客的投入要高得多的多得多&amp;hellip;所以如果不实战，就没有办法学好软件？不得不说，进行实战时，虽然会投入更多的时间和精力，但也确实能将知识掌握的更牢靠，或者说知识留存率更高，这大概也是学习软件技术要实战的共识由来。但这也并不意味着学习软件技术一定要实战。
 实战能更好地掌握软件技术的原因在于，实战能给你提供更多的上下文，而不只是你想要学的。在实战中，你以为你只学到了一个知识点，实际上你学到了可能十几个甚至更多的知识点。而且这些知识点都围绕着同一个场景展开，可以更容易地被吸收进你自身的知识体系，从而就更容易被运用。最终就让人觉得实战能够将知识掌握得更牢靠，换句话说就是会用了。而你通过读书学来的东西，则直截了当得多，往往就只有那一个知识点，针对性很强。这些点状得知识，并没有那么容易和你自己得知识体系融合，进而被你运用。
-之所以要实战，关键在于实战可以给你： 1. 学到更多相关联的知识，形成知识网络，而不仅是知识点； 2. 知识对应的应用场景信息，包括问题的发生原因、解决经过、解决结果。
-那如果在阅读技术书籍和博客的过程中就能做到这两点，那是不是就能达到接近实战的学习效果呢？我认为答案是肯定的。
+之所以要实战，关键在于实战可以给你：
+学到更多相关联的知识，形成知识网络，而不仅是知识点； 知识对应的应用场景信息，包括问题的发生原因、解决经过、解决结果。 那如果在阅读技术书籍和博客的过程中就能做到这两点，那是不是就能达到接近实战的学习效果呢？我认为答案是肯定的。
 首先关于第一个关键点：学习知识网络，而非知识点。举个简单的例子，在学习一门新的程序语言的时候，与之前学习的程序语言做对比。根据对之前程序语言的学习经验，抽象一些需要掌握的模块，比如设计思想，亮点，基本语法，提供的方法库，著名的项目等。通过读书来了解这门新语言后，知识或多或少就和已经掌握的语言建立了一个连接，这可以帮助我们更快速高效地掌握了这门新语言。
 当然这还不够，这样的连接还是相对较弱，所以关注第二个关键点，帮助我们促进新知识和已有知识网络的融合。可以在读书的过程中，不断地思考，向自己发问，诸如“这个程序语言用来开发这样的项目为什么会更合适？”，“为什么这门程序语言会更适合高并发？”等等。这些问题都是这门语言的应用场景，在不断地弄清楚这些问题的过程中，实际上也就是在不断地学习具体应用场景，进而不断地加强新知识与已有知识的连接。
 实战并非学习技术的唯一途径，但实战绝对是软件从业者最重要的学习手段之一。只是在我们无法获得这些实战机会的时候，记得学习软件技术并非一定要实战。</description></item></channel></rss>
